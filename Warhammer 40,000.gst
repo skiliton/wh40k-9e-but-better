@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition" revision="251" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition, but better" revision="251" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>This is the game system file for Warhammer 40,000, supporting the 9th edition of the game.  It is required for all other catalogues to function.</readme>
   <publications>
     <publication id="28ec-711c-pubN72690" name="Warhammer 40,000 Core Book" shortName="BRB" publisher="Games Workshop" publicationDate="2020-07-25" publisherUrl="https://www.games-workshop.com/Warhammer-40000-9th-Rulebook-EN-2020"/>
@@ -8139,7 +8139,7 @@ Remaining Wounds | Aura Range
                   <profiles>
                     <profile id="16dd-2fc1-21c2-3d8b" name="5. Cool Headed" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                       <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">: You can re-roll failed Morale tests taken forth is unit. In addition, if a unit declares this unit as the target of 
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">: You can re-roll failed Morale tests taken forth is unit. In addition, if a unit declares this unit as the target of
 their charge, this unit can fire Dverwatch [and will score hits on unmodified rolls of 5+ instead of 6 when doing so)</characteristic>
                       </characteristics>
                     </profile>
@@ -11145,7 +11145,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon (s
     </profile>
     <profile id="ad04-95ac-4694-2183" name="Agents of the Imperium" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your army is Battle-forged, you can include one Agent of the Imperium unit in each Imperium (excluding Fallen units) Patrol, Boarding Patrol, Battalion, Brigade and Arks of Omen Detachment in your army without those units taking up Battlefield Role slots in those Detachments. The inclusion of an Agent of the Imperium unit does not prevent other units from their Detachment benefiting from Detachment abilities (e.g. Chapter Tactics), and it does not prevent other units from your army benefiting from abilities that require every model in your army to have that ability (e.g. Combat Doctrines). An Agent of the Imperium unit included in a Patrol, Boarding Patrol, Battalion, Brigade or Arks of Omen Detachment in this manner is ignored for any rules that state all units from that Detachment must have at least one Faction keyword in common (e.g. in a matched play game), and when determining your Army Faction. 
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your army is Battle-forged, you can include one Agent of the Imperium unit in each Imperium (excluding Fallen units) Patrol, Boarding Patrol, Battalion, Brigade and Arks of Omen Detachment in your army without those units taking up Battlefield Role slots in those Detachments. The inclusion of an Agent of the Imperium unit does not prevent other units from their Detachment benefiting from Detachment abilities (e.g. Chapter Tactics), and it does not prevent other units from your army benefiting from abilities that require every model in your army to have that ability (e.g. Combat Doctrines). An Agent of the Imperium unit included in a Patrol, Boarding Patrol, Battalion, Brigade or Arks of Omen Detachment in this manner is ignored for any rules that state all units from that Detachment must have at least one Faction keyword in common (e.g. in a matched play game), and when determining your Army Faction.
 
 An Agent of the Imperium unit can never be included in a Brood Brothers Detachment</characteristic>
       </characteristics>

@@ -1,4 +1,4 @@
-Warhammer 40,000 9th Edition
+Warhammer 40,000 9th Edition, but better
 ============================
 
 [![GitHub release](https://img.shields.io/github/release/BSData/wh40k.svg?style=flat-square)](https://github.com/BSData/wh40k/releases/latest)
