@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="131" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="133" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -13375,7 +13375,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink id="c2d9-3b3b-96a0-ec1d" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                <entryLink id="c2d9-3b3b-96a0-ec1d" name="Autocannon" hidden="false" collective="false" import="true" targetId="5210-8cb2-b5a2-a04f" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e29-9cd3-8327-b3ae" type="max"/>
                   </constraints>
@@ -13384,6 +13384,17 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
                   </costs>
                 </entryLink>
                 <entryLink import="true" name="Multi-laser" hidden="false" id="c56a-c64f-f068-0c84" type="selectionEntry" targetId="9648-1181-6add-f56d">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8949-3480-7955-e433" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="328b-251b-801a-24a5" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4258-8e9b-a4d4-961f" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
@@ -24849,48 +24860,6 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Malcador Battle Cannon" hidden="false" id="6cfe-900d-e31b-7648" publicationId="7573-8d1b-acdf-2de8" collective="false" sortIndex="1">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60ea-0b02-24c5-bb36" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bc09-8afa-c930-ad4c" includeChildSelections="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Malcador Battle Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="53e8-9a9a-13b1-517d">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Malcador Twin Lascannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="714f-eef1-6d8e-771d" publicationId="7573-8d1b-acdf-2de8" page="61">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-            <cost name="pts" typeId="points" value="0"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="0de0-2a02-7f09-1e7a" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3">
-              <costs>
-                <cost name="pts" typeId="points" value="5"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Pintle Mount" hidden="false" id="e72a-f0d7-3bfe-6561" collective="false" targetId="ebb9-dadc-c98d-9b62" type="selectionEntryGroup" sortIndex="4"/>
         <entryLink import="true" name="Tank Aces" hidden="false" id="d1ef-ebf4-62f3-e079" collective="false" targetId="998b-b53a-603f-6c5b" type="selectionEntryGroup"/>
@@ -24972,69 +24941,82 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           </constraints>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="2 Lascannons" hidden="false" id="48e2-4c02-b0df-7a53" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dfa-f779-222b-6948" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Lascannon" id="59a1-57aa-e7a4-babc" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" id="25f1-9441-8d2c-cabe" type="selectionEntry" targetId="a908-4664-11cd-f8b2">
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="62bf-98f3-3a2e-9804" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="64d6-aad4-5d9c-31ec" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1471-658f-94f7-c822" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Autocannons" hidden="false" id="c7cc-1c08-914b-505b" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ba3-4aa7-e59e-9436" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Autocannon" id="1833-e926-7bc3-af80" hidden="false" targetId="fa99-0671-b31a-22d7" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Autocannon" hidden="false" id="bb2b-2725-152b-5680" type="selectionEntry" targetId="5210-8cb2-b5a2-a04f">
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ac4-bdbf-9763-31fe" includeChildSelections="false"/>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6355-7f3d-cf29-3c7f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Heavy Bolters" hidden="false" id="f8c2-c5e5-56ea-1f94" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec39-741b-a801-9234" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy bolter" id="10e1-822b-5880-1f25" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" id="25ab-570c-7da5-5134" type="selectionEntry" targetId="05ab-e7cc-e856-c36f">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9579-f27f-8b11-4aed" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3898-a8c5-2b36-47e5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Heavy Flamers" hidden="false" id="45ce-5077-38c4-b838" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e350-bded-8e77-e735" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Heavy flamer" id="dcf1-002f-a954-66c3" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Heavy flamer" hidden="false" id="e209-822f-706f-6ce1" type="selectionEntry" targetId="18bc-b335-29c2-2ae2">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ddc4-6400-5999-325c" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9e60-925c-0fd6-10c5" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2 Multi-lasers" hidden="false" id="d681-c92b-5c01-07f5" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e51-80f4-6a9e-0bf4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Multi-laser" id="4c0f-37e4-5669-36d6" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
-              </infoLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Multi-laser" hidden="false" id="5031-cceb-2dcd-30c9" type="selectionEntry" targetId="9648-1181-6add-f56d">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="9dfb-34ba-f908-5e58" includeChildSelections="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6341-0e4b-5176-e4c1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -25202,7 +25184,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -28054,13 +28036,6 @@ Each time a model with this doctrine makes a ranged attack, an unmodified hit ro
       </constraints>
       <selectionEntries>
         <selectionEntry id="6793-b250-cba7-42d9" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="points" value="0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dccb-7194-05d6-9725" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e5ca-cdd0-1e89-95df" type="max"/>
           </constraints>
@@ -28091,13 +28066,6 @@ Each time a model with this doctrine makes a ranged attack, an unmodified hit ro
           </costs>
         </selectionEntry>
         <selectionEntry id="3540-8e65-5f57-4bbf" name="Armoured Tracks" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="points" value="0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dccb-7194-05d6-9725" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5a08-eea5-1725-a9c8" type="max"/>
           </constraints>
@@ -29696,6 +29664,34 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Malcador Turret Weapon" id="be81-3200-ebc6-beaf" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Malcador Battle Canon" hidden="false" id="b33d-8f82-f2a4-415e">
+          <infoLinks>
+            <infoLink name="Battle cannon" id="da04-d9a1-75a8-6b71" hidden="false" type="profile" targetId="bc34-f1ec-56fa-2829"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-86d1-fd6c-2fa5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="b59f-bac3-2bef-8e88">
+          <infoLinks>
+            <infoLink name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" id="2f13-5049-c46c-517c" hidden="false" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="782a-a89a-2977-3760" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin Lascanon" hidden="false" id="237d-d1f9-8e5e-9b4e">
+          <infoLinks>
+            <infoLink name="Twin lascannon" id="8acf-6d57-b19b-1313" hidden="false" type="profile" targetId="1662-54b9-46da-fefc"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f29a-515d-0fbc-1e99" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
