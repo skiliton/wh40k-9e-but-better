@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="133" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="134" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -6511,7 +6511,7 @@
                 <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                 <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13334,38 +13334,15 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
               </constraints>
               <entryLinks>
                 <entryLink id="d3dc-b75c-3396-37f3" name="Lascannon" hidden="false" collective="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="fd12-4575-0bad-221a" value="0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4c07-0d52-76dd-fdb3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd12-4575-0bad-221a" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d209-f3c7-e2dc-cf6b" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2568-4f32-1d96-345b" includeChildSelections="false"/>
                   </constraints>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
-                  <entryLinks>
-                    <entryLink import="true" name="Lascannon" hidden="false" id="0510-4a82-2ac9-c055" collective="false" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" value="0" field="4334-f05b-3c2c-55b1">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="4c07-0d52-76dd-fdb3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4334-f05b-3c2c-55b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="90bf-cb12-fb5a-f698" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <costs>
-                        <cost name="pts" typeId="points" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="4908-6aba-e1be-68dc" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+                  </infoLinks>
                 </entryLink>
                 <entryLink id="a876-ff45-b47c-a432" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
                   <constraints>
@@ -25020,6 +24997,42 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Malcador Turret Weapon" id="c0c1-114e-4799-022a" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Malcador Battle Canon" hidden="false" id="6728-c20d-5dc9-daa2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1719-0181-c1bd-daa5" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Malcador Battle Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="d4fa-9d55-1154-0814">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Twin Lascanon" hidden="false" id="d9d8-61e6-21a6-2a19">
+              <infoLinks>
+                <infoLink name="Twin lascannon" id="2312-ab22-00b5-81e1" hidden="false" type="profile" targetId="1662-54b9-46da-fefc"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d8a-49fe-5155-c857" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="3026-fdd3-c4f7-59eb" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Explodes (6+/6&quot;/D6)" id="b516-9e8a-21ea-b26b" hidden="false" targetId="7525-aa8c-bea2-9691" type="profile"/>
@@ -29670,20 +29683,21 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
     <selectionEntryGroup name="Malcador Turret Weapon" id="be81-3200-ebc6-beaf" hidden="false">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Malcador Battle Canon" hidden="false" id="b33d-8f82-f2a4-415e">
-          <infoLinks>
-            <infoLink name="Battle cannon" id="da04-d9a1-75a8-6b71" hidden="false" type="profile" targetId="bc34-f1ec-56fa-2829"/>
-          </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f3a-86d1-fd6c-2fa5" includeChildSelections="false"/>
           </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="b59f-bac3-2bef-8e88">
-          <infoLinks>
-            <infoLink name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" id="2f13-5049-c46c-517c" hidden="false" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="782a-a89a-2977-3760" includeChildSelections="false"/>
-          </constraints>
+          <profiles>
+            <profile name="Malcador Battle Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6a48-e795-1278-8d68">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Twin Lascanon" hidden="false" id="237d-d1f9-8e5e-9b4e">
           <infoLinks>
@@ -29694,6 +29708,13 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
           </constraints>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="c5a9-4c4c-1cb2-8a8a" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3">
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
