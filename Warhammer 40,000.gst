@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition, but better" revision="251" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition, but better" revision="254" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>This is the game system file for Warhammer 40,000, supporting the 9th edition of the game.  It is required for all other catalogues to function.</readme>
   <publications>
     <publication id="28ec-711c-pubN72690" name="Warhammer 40,000 Core Book" shortName="BRB" publisher="Games Workshop" publicationDate="2020-07-25" publisherUrl="https://www.games-workshop.com/Warhammer-40000-9th-Rulebook-EN-2020"/>
@@ -3587,9 +3587,6 @@ Remaining Wounds | Aura Range
       </costs>
     </selectionEntry>
     <selectionEntry id="a908-4664-11cd-f8b2" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="3036-38da-528d-0a80" name="Lascannon" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
@@ -9499,11 +9496,11 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon (s
     <profile id="bc34-f1ec-56fa-2829" name="Battle cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="e6d5-677a-d8ed-f6a5" name="Bolt pistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -10736,7 +10733,7 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon (s
         <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="c3c9-08d7-bfae-4ff7" name="Twin multi-melta" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
