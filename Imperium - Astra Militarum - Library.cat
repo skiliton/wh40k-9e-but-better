@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="134" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="137" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -621,8 +621,8 @@
         <profile id="c57e-43b9-2cf4-2fbb" name="Exterminator Autocannon" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon</characteristic>
@@ -13268,12 +13268,12 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2511-1f63-cb76-9977" type="max"/>
                       </constraints>
                       <costs>
-                        <cost name="pts" typeId="points" value="10"/>
+                        <cost name="pts" typeId="points" value="0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name="pts" typeId="points" value="0"/>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                   </costs>
@@ -24842,7 +24842,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <entryLink import="true" name="Tank Aces" hidden="false" id="d1ef-ebf4-62f3-e079" collective="false" targetId="998b-b53a-603f-6c5b" type="selectionEntryGroup"/>
         <entryLink import="true" name="Battle Honours" hidden="false" id="4a25-b3fa-946b-cd79" collective="false" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
         <entryLink import="true" name="Battle Scars" hidden="false" id="d90a-f18d-f376-c560" collective="false" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Malcador Chasis Tank Equipment" hidden="false" id="cbe7-4fb3-dfd2-9893" collective="false" targetId="a111-ef72-159a-90a5" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Malcador Chasis Tank Equipment" hidden="false" id="cbe7-4fb3-dfd2-9893" collective="false" targetId="a111-ef72-159a-90a5" type="selectionEntryGroup" sortIndex="5"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Hull Weapon" id="7ee6-7efa-5497-5907" hidden="false" collective="false" import="true" defaultSelectionEntryId="773b-5588-3097-f082" sortIndex="2">
@@ -24874,6 +24874,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="0910-ab67-3208-8af5" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
             </entryLink>
             <entryLink import="true" name="Demolisher cannon" hidden="false" id="036f-364c-2577-638e" collective="false" targetId="1f7e-32c4-61af-510f" type="selectionEntry">
               <constraints>
@@ -24997,7 +25000,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Malcador Turret Weapon" id="c0c1-114e-4799-022a" hidden="false">
+        <selectionEntryGroup name="Malcador Turret Weapon" id="c0c1-114e-4799-022a" hidden="false" sortIndex="1">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Malcador Battle Canon" hidden="false" id="6728-c20d-5dc9-daa2">
               <constraints>
@@ -25032,6 +25035,10 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               </costs>
             </entryLink>
           </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="168c-71ea-e7c4-166d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b10a-9dae-c6dc-e45b" includeChildSelections="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -25174,6 +25181,16 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="01f7-f3c8-8012-748a" id="8a5d-bf73-44c3-f4fb" primary="false" name="Battle Tank"/>
+        <categoryLink targetId="ec80-f655-6595-2558" id="9518-b64c-6494-024d" primary="false" name="Malcador"/>
+        <categoryLink targetId="4520-cc21-fc02-4a7e" id="da98-6895-3358-c649" primary="false" name="Regimental"/>
+        <categoryLink targetId="c8fd-783f-3230-493e" id="ae4f-6bf6-d113-a5d6" primary="false" name="Vehicle"/>
+        <categoryLink targetId="2fd6-867a-e7b1-1e3a" id="f6d0-c3b6-425c-5aeb" primary="false" name="Squadron"/>
+        <categoryLink targetId="b154-f59d-8ff1-88b7" id="2f91-4f39-5856-730c" primary="false" name="Smoke"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="6170-d95f-3760-d21c" primary="false" name="Faction: Imperium"/>
+        <categoryLink targetId="3263-4233-4344-6228" id="cd6d-7f9d-4287-b15b" primary="false" name="Faction: Astra Militarum"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="2e81-7616-b5b8-e0c3" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" page="0" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -25411,6 +25428,192 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <categoryLinks>
+        <categoryLink targetId="1b66-3f5f-6705-079a" id="f436-28b2-9bb1-ea13" primary="false" name="Dedicated Transport"/>
+        <categoryLink targetId="4520-cc21-fc02-4a7e" id="54e3-7bad-28ee-9c9d" primary="false" name="Regimental"/>
+        <categoryLink targetId="2fd6-867a-e7b1-1e3a" id="2c8f-20d2-2874-f6ad" primary="false" name="Squadron"/>
+        <categoryLink targetId="6cc4-1b62-8e8a-05cd" id="9ee9-ea1a-ab22-441b" primary="false" name="Transport"/>
+        <categoryLink targetId="b154-f59d-8ff1-88b7" id="4703-a074-3b36-bfdc" primary="false" name="Smoke"/>
+        <categoryLink targetId="c8fd-783f-3230-493e" id="b634-5819-4abe-8034" primary="false" name="Vehicle"/>
+        <categoryLink targetId="3263-4233-4344-6228" id="bda7-bf69-eeaa-4bf3" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="634c-1e85-5a42-2d70" primary="false" name="Faction: Imperium"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="b964-cf57-5ce4-7922" name="Hermes Light Sentinels" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Regimental</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="19cd-c205-e020-76d7">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eea9-e9df-4336-03ed" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="ebf0-6612-ba54-fcac">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="99bc-0dbb-6298-35ee" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="0897-c52d-bffb-debe">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4442-cdaa-334a-ca1e" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d3a9-69f0-0bb5-6a25">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="df8f-b6b9-45de-5b5e" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="e367-d84a-5545-facb">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7d9b-959f-e938-36f1" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d1d2-5e35-a818-e25e">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5dea-1275-26d8-8510" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="6098-673d-8c92-0f98">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e292-e077-bce3-4402" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="f1c2-3526-b6cc-d3ae">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="be63-747f-089b-09bd" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="remove" field="category" value="3263-4233-4344-6228">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="remove" field="category" value="4520-cc21-fc02-4a7e">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="20d3-d77c-5dd8-a6e0">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink id="895b-796a-39d1-5fa2" name="Regimental Tactics" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
+        <infoLink name="Vehicle Squadron" id="edf9-d537-4426-151c" hidden="false" type="profile" targetId="ed79-bdf5-75ca-f019"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="750e-9bab-c822-949f" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="681e-766c-9fc7-11dc" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="2d7d-9e80-f641-4d71" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="0643-1d39-09da-2eaf" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink id="d5a2-fdea-8c1c-6e22" name="Platoon" hidden="false" targetId="3957-e376-ba3a-83b9" primary="false"/>
+        <categoryLink id="7ed1-0f5b-99b7-4cc3" name="Smoke" hidden="false" targetId="b154-f59d-8ff1-88b7" primary="false"/>
+        <categoryLink id="a4b6-63e2-81b1-790b" name="Squadron" hidden="false" targetId="2fd6-867a-e7b1-1e3a" primary="false"/>
+        <categoryLink id="eff0-3db1-8c79-ad6d" name="Sentinel" hidden="false" targetId="9c73-c2a1-fd2d-e0a6" primary="false"/>
+        <categoryLink id="f865-1473-b008-2616" name="Regimental" hidden="false" targetId="4520-cc21-fc02-4a7e" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="80dd-c87d-9b10-7695" name="Hermes Light Sentinel" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f5ea-1abf-adc0-5137" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d812-8b0f-5716-55e5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ddd9-7452-5f2f-b632" name="Hermes Light Sentinel" publicationId="53e9d88f--pubN88319" page="101" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3f1c-b085-803e-241c" name="Explodes (6+/3&quot;/1)" hidden="false" targetId="700d-9bd7-eade-5a73" type="profile"/>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="262a-702b-8495-50c5" name="Hermes Sentinel Weapon" hidden="false" collective="false" import="true" targetId="e965-e157-b3c6-f3ac" type="selectionEntryGroup">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-94be-ea94-a917" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="335d-dfbd-f6fc-a2b1" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
+            <entryLink id="b476-a091-7ade-8360" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -29715,6 +29918,60 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hermes Sentinel Weapon" id="e965-e157-b3c6-f3ac" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="b458-b068-d251-d1dd">
+          <entryLinks>
+            <entryLink import="true" name="Grenade launcher" hidden="false" id="8573-832f-f106-f505" type="selectionEntry" targetId="a75e-512d-c808-3057"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="dc6d-6b22-2135-96dd">
+          <entryLinks>
+            <entryLink import="true" name="Multi-laser" hidden="false" id="eff2-5ee6-1034-fe37" type="selectionEntry" targetId="9648-1181-6add-f56d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3fb-33da-e275-75be" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Plasma Gun" hidden="false" id="74c4-1824-4914-6b2f">
+          <entryLinks>
+            <entryLink import="true" name="Plasma gun" hidden="false" id="dd93-dee8-7e45-9320" type="selectionEntry" targetId="8c14-22cc-93ce-b85a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d09-ea02-623d-c357" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="8475-b5b2-79e7-eebf">
+          <entryLinks>
+            <entryLink import="true" name="Heavy flamer" hidden="false" id="2911-5da0-1bf0-6137" type="selectionEntry" targetId="18bc-b335-29c2-2ae2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1c0-42b0-a596-e286" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="f0af-6494-5f22-06fd">
+          <entryLinks>
+            <entryLink import="true" name="Heavy bolter" hidden="false" id="2c46-930d-b010-3123" type="selectionEntry" targetId="05ab-e7cc-e856-c36f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5713-9ce2-815e-fbfb" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a02-b043-183a-38ac" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d59-474d-162f-22f5" includeChildSelections="false"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
