@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="137" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="139" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -621,8 +621,8 @@
         <profile id="c57e-43b9-2cf4-2fbb" name="Exterminator Autocannon" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon</characteristic>
@@ -1454,6 +1454,9 @@
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="a390-2076-d096-4499" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="76dd-fd31-13b0-c337" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
         <entryLink id="6b7d-8623-53df-5f6e" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
@@ -9141,6 +9144,9 @@ Divination (Psychic Action -Warp Charge 7):In your Psychic phase, one ASTROPATH 
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="aa90-0467-4015-74ac" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="f82b-7588-a977-2856" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
         <entryLink id="6494-68ff-3c7c-bd38" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
@@ -9372,6 +9378,9 @@ Divination (Psychic Action -Warp Charge 7):In your Psychic phase, one ASTROPATH 
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="2d76-c7d0-1f61-a77e" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="a196-edf2-7bfe-0ade" name="2 Twin Heavy Flamer or 2 Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="846f-095f-3967-92af" type="selectionEntryGroup"/>
         <entryLink id="e420-4bf4-3e88-63cd" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
@@ -11816,6 +11825,9 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="7eaa-4aa7-1916-10e4" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="6a2f-4737-17bc-c1e4" name="2 Twin Heavy Flamer or 2 Twin Heavy Bolter" hidden="false" collective="false" import="true" targetId="846f-095f-3967-92af" type="selectionEntryGroup"/>
         <entryLink id="77c1-9ccd-38ac-d97d" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
@@ -12545,6 +12557,9 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="924a-c20e-2bc9-73b2" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="592d-f78e-338e-4782" name="Co-axial Autocannon" hidden="false" collective="false" import="true" targetId="d204-c398-0d43-5fb4" type="selectionEntry"/>
         <entryLink id="c326-359f-bc84-960f" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
@@ -13195,6 +13210,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
         <selectionEntry id="a749-5fa8-7b53-5e68" name="Leman Russ Battle Tank" publicationId="53e9d88f--pubN88319" page="46" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d12a-58de-98a2-38e7" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02a6-7452-76b9-b70a" includeChildSelections="false"/>
           </constraints>
           <infoLinks>
             <infoLink id="1ed6-4149-70e1-b9fa" name="Leman Russ" publicationId="53e9d88f--pubN88319" page="105" hidden="false" targetId="59561fd3-8437-5e2e-1080-fe4d29ae4a60" type="profile"/>
@@ -13262,7 +13278,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="5578-1e7b-81fe-da61" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f95b-fe73-d30b-75e0" name="Twin lascannon" hidden="false" collective="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                    <entryLink id="f95b-fe73-d30b-75e0" name="Turret Twin lascannon" hidden="false" collective="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0de0-bb69-45db-53ea" type="min"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2511-1f63-cb76-9977" type="max"/>
@@ -16540,6 +16556,9 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="4e1e-19d0-8d84-d6b7" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="2e83-87e7-bc1c-7054" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
         <entryLink id="a772-59af-d382-5b33" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
@@ -17091,6 +17110,9 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="4a80-847a-d61c-62a9" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="75ad-fa37-1583-1435" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
               <modifiers>
@@ -19267,6 +19289,9 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="2505-51ee-addd-765b" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="81d4-1c28-45e3-56fe" name="Militarum Multi-laser" hidden="false" collective="false" import="true" targetId="3815-7c05-a695-4eb8" type="selectionEntry">
               <constraints>
@@ -19338,7 +19363,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
               <characteristics>
                 <characteristic name="Effect" typeId="1cde-2209-d79a-53fc">In your next Shooting Phase, the first time this unit is selected to shoot, you can select one enemy Infantry unit that is visible to it. If you do so:
 - Models in this unit can only make attacks against that enemy unit that phase (and only if that enemy unit is an eligible target for those attacks).
-- If this unit scores 5 or more hits against that unit, then until the end of your opponent’s next turn, that enemy unit is pinned. While a unit is pinned, each time a model in that unit makes an attack, subtract 2” from the Move characteristic of models in that unit</characteristic>
+- If this unit scores 5 or more hits against that unit, then until the end of your opponent’s next turn, that enemy unit is pinned. While a unit is pinned, subtract 2” from the Move characteristic of models in that unit</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -19666,9 +19691,9 @@ Until the end of your next Movement phase, if this unit advances, do not make an
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90&quot;</characteristic>
                         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">10</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
                         <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
                       </characteristics>
                     </profile>
@@ -25021,7 +25046,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Twin Lascanon" hidden="false" id="d9d8-61e6-21a6-2a19">
               <infoLinks>
-                <infoLink name="Twin lascannon" id="2312-ab22-00b5-81e1" hidden="false" type="profile" targetId="1662-54b9-46da-fefc"/>
+                <infoLink name="Turret Twin lascannon" id="2312-ab22-00b5-81e1" hidden="false" type="profile" targetId="0e47-ffc2-b361-5b72"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d8a-49fe-5155-c857" includeChildSelections="false"/>
@@ -25029,9 +25054,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="3026-fdd3-c4f7-59eb" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3">
+            <entryLink import="true" name="Vanquisher Battle Cannon" hidden="false" id="3026-fdd3-c4f7-59eb" type="selectionEntry" targetId="5901-34d7-fb83-0e4a">
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -25190,6 +25215,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink targetId="b154-f59d-8ff1-88b7" id="2f91-4f39-5856-730c" primary="false" name="Smoke"/>
         <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="6170-d95f-3760-d21c" primary="false" name="Faction: Imperium"/>
         <categoryLink targetId="3263-4233-4344-6228" id="cd6d-7f9d-4287-b15b" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="828e-23ee-140c-6291" primary="false" name="Heavy Support"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="2e81-7616-b5b8-e0c3" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -25205,16 +25231,6 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-5</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+6</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack is made with this weapon, if that attack successfully wounds the target, invulnerable saving throws cannot be made against that attack and the target suffers D3 mortal wounds in addition to any normal damage.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="654c-e71c-16b7-92c6" name="Co-axial Heavy Stubber" publicationId="53e9d88f--pubN88319" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -25322,6 +25338,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
       </profiles>
       <infoLinks>
         <infoLink name="Regimental Tactics" id="752e-abc0-7729-24ac" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
+        <infoLink name="Armoured Tracks" id="33dc-5d57-c89d-0899" hidden="false" targetId="e5af-a2b4-1ebd-d89c" type="profile"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -25568,6 +25585,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink id="a4b6-63e2-81b1-790b" name="Squadron" hidden="false" targetId="2fd6-867a-e7b1-1e3a" primary="false"/>
         <categoryLink id="eff0-3db1-8c79-ad6d" name="Sentinel" hidden="false" targetId="9c73-c2a1-fd2d-e0a6" primary="false"/>
         <categoryLink id="f865-1473-b008-2616" name="Regimental" hidden="false" targetId="4520-cc21-fc02-4a7e" primary="false"/>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="b1b2-1203-6442-4516" primary="false" name="Fast Attack"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="80dd-c87d-9b10-7695" name="Hermes Light Sentinel" hidden="false" collective="false" import="true" type="model">
@@ -25614,6 +25632,14 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Turret Twin Lascanon" hidden="false" id="db0a-eb2e-59c4-af6f">
+      <infoLinks>
+        <infoLink name="Turret Twin lascannon" id="8629-4cdf-12d8-e0fc" hidden="false" type="profile" targetId="0e47-ffc2-b361-5b72"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce1-5ee2-bf5f-f2a2" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -25822,6 +25848,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a9-f450-d821-145c" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Lascannon" id="8622-ebe4-d6c5-efa1" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="bec4-f1b7-24f7-4c26" name="Missile launcher" hidden="false" collective="false" import="true" targetId="1469-1964-7a91-94d4" type="selectionEntry">
           <modifiers>
@@ -25909,6 +25938,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="e0c1-5eb5-440c-e060" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="9ce0-390d-5845-70fc" name="Twin heavy bolter" hidden="false" collective="false" import="true" targetId="09d8-7790-ed3f-4d6d" type="selectionEntry">
               <constraints>
@@ -25936,6 +25968,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               <costs>
                 <cost name="pts" typeId="points" value="20"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="8702-8ead-0e94-eab6" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="04df-335a-9078-6ca4" name="Twin heavy flamer" hidden="false" collective="false" import="true" targetId="8d70-a6af-cbad-f08c" type="selectionEntry">
               <constraints>
@@ -29912,9 +29947,9 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" hidden="false" id="c5a9-4c4c-1cb2-8a8a" type="selectionEntry" targetId="2e81-7616-b5b8-e0c3">
+        <entryLink import="true" name="Vanquisher Battle Cannon" hidden="false" id="c5a9-4c4c-1cb2-8a8a" type="selectionEntry" targetId="5901-34d7-fb83-0e4a">
           <costs>
-            <cost name="pts" typeId="points" value="5"/>
+            <cost name="pts" typeId="points" value="0"/>
           </costs>
         </entryLink>
       </entryLinks>

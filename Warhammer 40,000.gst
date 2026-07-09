@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition, but better" revision="254" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28ec-711c-d87f-3aeb" name="Warhammer 40,000 9th Edition, but better" revision="256" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@WH40k Data Dev" authorUrl="https://www.bsdata.net/contact" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>This is the game system file for Warhammer 40,000, supporting the 9th edition of the game.  It is required for all other catalogues to function.</readme>
   <publications>
     <publication id="28ec-711c-pubN72690" name="Warhammer 40,000 Core Book" shortName="BRB" publisher="Games Workshop" publicationDate="2020-07-25" publisherUrl="https://www.games-workshop.com/Warhammer-40000-9th-Rulebook-EN-2020"/>
@@ -4257,7 +4257,7 @@ Remaining Wounds | Aura Range
     </selectionEntry>
     <selectionEntry id="ee18-b1cd-6b60-464d" name="Twin lascannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="bf1a-c284-f2bb-8d85" name="Twin lascannon" hidden="false" targetId="1662-54b9-46da-fefc" type="profile"/>
+        <infoLink id="bf1a-c284-f2bb-8d85" name="Turret Twin lascannon" hidden="false" targetId="0e47-ffc2-b361-5b72" type="profile"/>
       </infoLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
@@ -11145,6 +11145,16 @@ For the purposes of this ability, a Rapid Fire bolt weapon is any bolt weapon (s
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your army is Battle-forged, you can include one Agent of the Imperium unit in each Imperium (excluding Fallen units) Patrol, Boarding Patrol, Battalion, Brigade and Arks of Omen Detachment in your army without those units taking up Battlefield Role slots in those Detachments. The inclusion of an Agent of the Imperium unit does not prevent other units from their Detachment benefiting from Detachment abilities (e.g. Chapter Tactics), and it does not prevent other units from your army benefiting from abilities that require every model in your army to have that ability (e.g. Combat Doctrines). An Agent of the Imperium unit included in a Patrol, Boarding Patrol, Battalion, Brigade or Arks of Omen Detachment in this manner is ignored for any rules that state all units from that Detachment must have at least one Faction keyword in common (e.g. in a matched play game), and when determining your Army Faction.
 
 An Agent of the Imperium unit can never be included in a Brood Brothers Detachment</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e47-ffc2-b361-5b72" name="Turret Twin lascannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
