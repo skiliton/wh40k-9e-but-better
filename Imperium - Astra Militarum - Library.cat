@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="139" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="141" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -13278,7 +13278,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="5578-1e7b-81fe-da61" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f95b-fe73-d30b-75e0" name="Turret Twin lascannon" hidden="false" collective="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                    <entryLink id="f95b-fe73-d30b-75e0" name="Twin lascannon" hidden="false" collective="false" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0de0-bb69-45db-53ea" type="min"/>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="2511-1f63-cb76-9977" type="max"/>
@@ -17059,9 +17059,6 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
           </characteristics>
         </profile>
       </profiles>
-      <infoLinks>
-        <infoLink id="5647-2609-594a-c891" name="Explodes (6+/2D6&quot;/D6)" hidden="false" targetId="f505-bfe1-b238-0c41" type="profile"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="638c-7f7b-4cdb-8475" name="Titanic" hidden="false" targetId="bdda-36f0-4f32-1639" primary="false"/>
         <categoryLink id="4998-e8a4-2d3b-4178" name="Valdor Tank Hunter" hidden="false" targetId="c00b-3ffa-0dbc-5154" primary="false"/>
@@ -17078,7 +17075,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b26d-d9a8-b4bf-ae7f" type="min"/>
           </constraints>
           <profiles>
-            <profile id="914b-da78-304f-05ac" name="Valdor Neutron Laser" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+            <profile id="914b-da78-304f-05ac" name="Valdor Neutron Laser" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
                 <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
@@ -18244,6 +18241,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
         <categoryLink id="9386-11d9-e83e-79bc" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="f191-e7f1-fc9c-8f82" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
         <categoryLink id="44df-1853-ea77-567b" name="Platoon" hidden="false" targetId="3957-e376-ba3a-83b9" primary="false"/>
+        <categoryLink targetId="4520-cc21-fc02-4a7e" id="8ba9-896a-aec9-162f" primary="false" name="Regimental"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e7df-1257-851a-5cee" name="Tempestor" hidden="false" collective="false" import="true" type="model">
@@ -19801,7 +19799,7 @@ Until the end of your next Movement phase, if this unit advances, do not make an
                         <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3b4-6844-8335-63ca" type="min"/>
                       </constraints>
                       <costs>
-                        <cost name="pts" typeId="points" value="5"/>
+                        <cost name="pts" typeId="points" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -25288,7 +25286,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
       <profiles>
         <profile name="Dracosan Armoured Transport" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="f3db-1f22-f385-40b4">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"/>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model can transport 22 ASTRA MILITARUM INFANTRY models. Each Heavy Weapons Team and Veteran Heavy Weapons Team takes up the space of 2 models. Each OGRYN and BULLGRYN takes up the space of 3 models. If this model is equipped with Demolisher Cannon, it can transport 10 ASTRA MILITARUM INFANTRY models instead.</characteristic>
           </characteristics>
         </profile>
         <profile name="Dracosan Armoured Transport" typeId="b3a8-0452-7436-44d1" typeName="Transport" hidden="false" id="f7eb-999f-c19a-1f51">
@@ -25296,20 +25294,20 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">22</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dracosan [1] (10+ wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="230b-bb58-d3fb-9f98" page="61">
+        <profile name="Dracosan [1] (8+ wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="230b-bb58-d3fb-9f98" page="61">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
             <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
             <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
             <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
             <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
             <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dracosan [2] (5-9 wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="7077-d266-97ef-866c" page="61">
+        <profile name="Dracosan [2] (4-7 wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="7077-d266-97ef-866c" page="61">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -25322,7 +25320,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Dracosan [3] (1-4 wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="01bf-6aa2-f981-aed9" page="61">
+        <profile name="Dracosan [3] (1-3 wounds remaining)" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="01bf-6aa2-f981-aed9" page="61">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
@@ -25601,7 +25599,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                 <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
-                <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
                 <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
@@ -25621,7 +25619,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <entryLink id="b476-a091-7ade-8360" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25"/>
+            <cost name="pts" typeId="points" value="30"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="2"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
@@ -25640,6 +25638,287 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fce1-5ee2-bf5f-f2a2" includeChildSelections="false"/>
       </constraints>
+    </selectionEntry>
+    <selectionEntry id="1523-1a22-cc1f-0a4f" name="Valdor Tank Hunter Mk.2" hidden="false" collective="false" import="true" type="upgrade">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Regimental</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="19cd-c205-e020-76d7">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eea9-e9df-4336-03ed" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9d01-4733-724a-e986" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="ebf0-6612-ba54-fcac">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="99bc-0dbb-6298-35ee" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="0897-c52d-bffb-debe">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="683d-b02f-ba48-865e" type="atLeast"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4442-cdaa-334a-ca1e" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d3a9-69f0-0bb5-6a25">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="df8f-b6b9-45de-5b5e" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e1f6-7311-2bea-60cb" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="e367-d84a-5545-facb">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="48a9-636b-33ba-f0a3" type="atLeast"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7d9b-959f-e938-36f1" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d1d2-5e35-a818-e25e">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e24b-8d6b-8b1a-88fc" type="atLeast"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5dea-1275-26d8-8510" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="6098-673d-8c92-0f98">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2e8d-ce24-c6b8-1b4c" type="atLeast"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e292-e077-bce3-4402" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="f1c2-3526-b6cc-d3ae">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f22e-ba09-12cd-f027" type="atLeast"/>
+                        <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="be63-747f-089b-09bd" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="6de0-6e7a-52cf-17b3" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="f72b-fde3-61a5-53b8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile id="20eb-d0b1-962c-856b" name="Valdor Tank Hunter [1] (11-20+ wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">20</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="701b-4f16-6af3-111e" name="Valdor Tank Hunter [2] (6-10 wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1526-a2bd-65b6-8ced" name="Valdor Tank Hunter [3] (1-5 wounds remaining)" publicationId="7573-8d1b-acdf-2de8" page="66" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">6+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="6433-3e38-06f6-cf2d" name="Titanic" hidden="false" targetId="bdda-36f0-4f32-1639" primary="false"/>
+        <categoryLink id="6059-9e3d-5d8c-bac9" name="Valdor Tank Hunter" hidden="false" targetId="c00b-3ffa-0dbc-5154" primary="false"/>
+        <categoryLink id="4a3d-0f2a-adbc-d8db" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="7fdf-3e09-565d-60fa" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="b81c-4504-3f92-40de" name="Super-Heavy" hidden="false" targetId="ccf2-6ae7-844b-dcd4" primary="false"/>
+        <categoryLink id="54c6-5fb0-399c-cced" name="Regimental" hidden="false" targetId="4520-cc21-fc02-4a7e" primary="false"/>
+        <categoryLink id="61f9-5855-82e7-93c7" name="Smoke" hidden="false" targetId="b154-f59d-8ff1-88b7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1d59-8d0e-8960-02e1" name="Neutron Laser Projector" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b93-4388-6f83-83b8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f643-cac1-a481-463a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e129-1d0a-42ec-1575" name="Neutron Laser Projector" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">14</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Any VEHICLE which suffers wounds from this weapon but is not slain must subtract 1 from its Shooting hit roll until the end of its controlling player’s next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="pts" typeId="points" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6280-7e8a-6354-3bfb" name="Autocannon" hidden="false" collective="false" import="true" defaultSelectionEntryId="33fa-f759-0884-fa44">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e715-2a7b-779d-1bb0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="560b-b5bf-f3c3-40ce" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6ef5-0c08-faae-111e" name="Lascannon" hidden="false" collective="false" import="true" targetId="a908-4664-11cd-f8b2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f66-87b0-53ca-654d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Lascannon" id="c68a-153f-cfb2-ac46" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="fd02-5c6a-b76f-ce83" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26e2-9d45-fd2a-6c44" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9941-f1d2-c5c1-81eb" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b269-4053-8dbf-5ccf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="775e-34dc-99ec-57bd" name="Autocannon" hidden="false" collective="false" import="true" targetId="5210-8cb2-b5a2-a04f" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="points" value="0"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e51e-5831-57fc-6852" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Multi-laser" hidden="false" id="a324-4a14-c4c8-3af6" type="selectionEntry" targetId="9648-1181-6add-f56d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="718c-25e0-4737-156c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bc32-290a-521d-6019" name="Pintle Mount" hidden="false" collective="false" import="true" targetId="ebb9-dadc-c98d-9b62" type="selectionEntryGroup"/>
+        <entryLink id="eb3a-c164-0b65-b081" name="Tank Aces" hidden="false" collective="false" import="true" targetId="998b-b53a-603f-6c5b" type="selectionEntryGroup"/>
+        <entryLink id="fa0f-0448-f179-e342" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
+        <entryLink id="d7e3-740e-ba7a-b510" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
+        <entryLink id="1cb9-5a98-6bc7-f7a1" name="Tank Aces" hidden="false" collective="false" import="true" targetId="998b-b53a-603f-6c5b" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Malcador Chasis Tank Equipment" hidden="false" id="616c-a005-a061-37f4" type="selectionEntryGroup" targetId="a111-ef72-159a-90a5"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="17"/>
+        <cost name="pts" typeId="points" value="335"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
