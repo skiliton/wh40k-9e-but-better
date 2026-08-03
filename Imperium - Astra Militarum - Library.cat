@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="141" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="142" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -1695,6 +1695,9 @@
           <costs>
             <cost name="pts" typeId="points" value="20"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="116c-4b71-c4dd-b81b" hidden="false" type="profile" targetId="f14a-07e5-5465-69cf"/>
+          </infoLinks>
         </entryLink>
         <entryLink id="5e4e-82df-1749-75ac" name="Co-axial Autocannon" hidden="false" collective="false" import="true" targetId="d204-c398-0d43-5fb4" type="selectionEntry"/>
         <entryLink id="7e00-27ec-2269-7254" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
@@ -20842,6 +20845,7 @@ Until the end of your next Movement phase, if this unit advances, do not make an
         <infoLink id="2d59-90b4-1638-cf45" name="Hellhound" hidden="false" targetId="bd48e6cb-2610-1525-abcc-200af38774a2" type="profile"/>
         <infoLink id="ec99-83a1-4a2f-c499" name="Vehicle Squadron" hidden="false" targetId="ed79-bdf5-75ca-f019" type="profile"/>
         <infoLink id="fe5e-d0b4-6cbc-c42e" name="Turret Weapon" hidden="false" targetId="9631-9f76-7ef9-a2e8" type="rule"/>
+        <infoLink name="Regimental Tactics" id="8469-e5eb-92b1-21ae" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cfe2-2442-2437-456e" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
@@ -25231,6 +25235,16 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack is made with this weapon, if that attack successfully wounds the target, invulnerable saving throws cannot be made against that attack and the target suffers D3 mortal wounds in addition to any normal damage.</characteristic>
           </characteristics>
         </profile>
+        <profile name="Co-axial Heavy Stubber" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1ccb-5eb1-4977-08ec">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&apos;&apos;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <costs>
         <cost name="pts" typeId="points" value="5"/>
@@ -25260,7 +25274,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
     <selectionEntry type="model" import="true" name="Dracosan Armoured Transport" hidden="false" id="8ccf-af8d-e319-45b6">
       <costs>
         <cost name="pts" typeId="points" value="150"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="8"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
       <entryLinks>
@@ -25920,6 +25934,281 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2af1-20d5-7f2d-608a" name="Militarum Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1449-a2ec-069d-4e5a" name="Militarum Melta Lance" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+4.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Centauro Armoured Cars" hidden="false" id="2b7a-e3e1-d77b-379e">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Centauro Armoured Car" hidden="false" id="c40d-28e8-354a-0ce5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7d6f-29a2-24be-32f9" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7da1-415b-d05a-33f9" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Centauro Armoured Car" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="14d3-9e86-a824-0c37">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&apos;&apos;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">6</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">9</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Centauro Co-axial Gun" id="526f-647a-ed7b-8eeb" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Co-axial Heavy Stubber" hidden="false" id="c3e4-e175-0d89-b64e" type="selectionEntry" targetId="51cb-f2d7-68eb-58bf">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a26d-517e-83f2-672b" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Co-axial Meltagun" hidden="false" id="951e-81f1-1416-78ca" type="selectionEntry" targetId="931e-af09-1dcf-8e1b">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f71-a026-5fc4-f791" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Centauro Main Gun" hidden="false" id="71b9-be2b-19fa-3db7" type="selectionEntryGroup" targetId="b3c6-99e0-2edd-d969">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aa70-899c-8345-2e85" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3509-9484-4c12-d285" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="80"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="4"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <comment>Regimental</comment>
+          <modifiers>
+            <modifier type="add" value="19cd-c205-e020-76d7" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="eea9-e9df-4336-03ed" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="ebf0-6612-ba54-fcac" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="99bc-0dbb-6298-35ee" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="0897-c52d-bffb-debe" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4442-cdaa-334a-ca1e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="d3a9-69f0-0bb5-6a25" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="df8f-b6b9-45de-5b5e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="e367-d84a-5545-facb" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="7d9b-959f-e938-36f1" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="d1d2-5e35-a818-e25e" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="5dea-1275-26d8-8510" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="6098-673d-8c92-0f98" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e292-e077-bce3-4402" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="f1c2-3526-b6cc-d3ae" field="category">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="be63-747f-089b-09bd" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="4520-cc21-fc02-4a7e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="cff6-a8e7-27ea-0776" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="6de0-6e7a-52cf-17b3" field="category">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="parent" childId="f72b-fde3-61a5-53b8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <infoLinks>
+        <infoLink name="Vehicle Squadron" id="3a02-36b2-ce1b-85d2" hidden="false" targetId="ed79-bdf5-75ca-f019" type="profile"/>
+        <infoLink name="Explodes (6+/6&quot;/D3)" id="0f4b-3b8a-c2d8-32dd" hidden="false" targetId="9bde-7aa6-8e9a-0792" type="profile"/>
+        <infoLink name="Regimental Tactics" id="f96a-ca79-5dcd-f4dd" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="c8fd-783f-3230-493e" id="d2c5-608c-03ff-a245" primary="false" name="Vehicle"/>
+        <categoryLink targetId="2fd6-867a-e7b1-1e3a" id="76e7-7bb0-23bc-a8b4" primary="false" name="Squadron"/>
+        <categoryLink targetId="3263-4233-4344-6228" id="0ca7-5ff8-074f-c864" primary="false" name="Faction: Astra Militarum"/>
+        <categoryLink targetId="4520-cc21-fc02-4a7e" id="21c8-0c0e-d729-7da4" primary="false" name="Regimental"/>
+        <categoryLink targetId="b154-f59d-8ff1-88b7" id="1b6e-5c03-0625-6a55" primary="false" name="Smoke"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="a9f2-a2b8-f57f-3534" primary="false" name="Faction: Imperium"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Castigator Gatling Cannon" hidden="false" id="4114-3050-bb4e-8c6a">
+      <profiles>
+        <profile name="Castigator Gatling Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ad8b-e65e-2ed2-8ead">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centauro Battle Cannon" hidden="false" id="eda6-7aba-bdd2-eb44">
+      <profiles>
+        <profile name="Centauro Battle Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0711-0c91-fd4e-f7f7">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&apos;&apos;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Melta Cannon" hidden="false" id="0f37-a2b2-c286-e0ee" page="0" collective="false">
+      <profiles>
+        <profile name="Melta Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0112-2c1d-475c-e1b7" publicationId="53e9d88f--pubN88319" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Turret Weapon.  Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+4.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Chiron Gatling Cannon" hidden="false" id="d0af-66a0-d6a3-e20f">
+      <profiles>
+        <profile name="Chiron Gatling Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2802-f188-1e56-c159">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Co-axial Heavy Stubber" hidden="false" id="51cb-f2d7-68eb-58bf">
+      <profiles>
+        <profile name="Co-axial Heavy Stubber" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="041f-0a2e-4e11-6f00" selectable="true">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&apos;&apos;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Co-axial Meltagun" hidden="false" id="931e-af09-1dcf-8e1b">
+      <profiles>
+        <profile name="Co-axial Meltagun" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2b8d-ee04-73fd-8c9b" selectable="true">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&apos;&apos;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack made with this weapon targets a unit within half range, that attack has a Damage characteristic of D6+2.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9ef3-0f17-2aeb-436e" name="Astra Militarum Pistol Weapons" hidden="false" collective="false" import="true">
@@ -26466,6 +26755,14 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b61d-7b05-1a6e-d23e" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Militarum Melta Lance" hidden="false" id="9ab9-1f31-fb9a-4b2c" type="selectionEntry" targetId="2af1-20d5-7f2d-608a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2e4f-5788-f9c5-6156" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -30286,6 +30583,59 @@ Skull Mask of Acheron (Aura): While an enemy unit is within 6&quot; of this mode
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1a02-b043-183a-38ac" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d59-474d-162f-22f5" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Centauro Main Gun" id="b3c6-99e0-2edd-d969" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Chiron Gatling Cannon" hidden="false" id="4593-403d-e98b-3778" type="selectionEntry" targetId="d0af-66a0-d6a3-e20f">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93db-7dcb-64fe-a9e0" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Centauro Battle Cannon" hidden="false" id="be21-d6ac-76ac-283d" type="selectionEntry" targetId="eda6-7aba-bdd2-eb44">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc4c-9d91-9631-399a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Melta Cannon" hidden="false" id="3fd2-dc42-e157-f818" type="selectionEntry" targetId="0f37-a2b2-c286-e0ee">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27ac-fee2-7c6c-0492" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Lascannon" hidden="false" id="7bfa-7487-108d-08cf" type="selectionEntry" targetId="a908-4664-11cd-f8b2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2e0-502f-7040-8fea" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Lascannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3e1d-4048-64f4-ef30">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&apos;&apos;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Centauro Co-axial Gun" id="6ead-2f25-99b5-662c" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Co-axial Heavy Stubber" hidden="false" id="3508-825c-760f-08b7" type="selectionEntry" targetId="51cb-f2d7-68eb-58bf">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0df0-1d1d-5c7f-49d3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Co-axial Meltagun" hidden="false" id="3aa8-5083-53ba-04ff" type="selectionEntry" targetId="931e-af09-1dcf-8e1b">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="971c-c1e3-98f8-97e5" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
