@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="144" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="145" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -13656,7 +13656,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               <modifiers>
                 <modifier type="set" value="false" field="hidden">
                   <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="fa52-8fb7-1c87-80e6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="e316-f1b7-03a5-a928" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Lord Commissar"/>
                   </conditions>
                 </modifier>
               </modifiers>
