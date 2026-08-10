@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="145" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="146" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -10889,6 +10889,7 @@ Divination (Psychic Action -Warp Charge 7):In your Psychic phase, one ASTROPATH 
                     <entryLink id="1141-0515-49b6-1720" name="Meltagun" hidden="false" collective="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47f8-9f47-e229-721b" type="max"/>
+                        <constraint type="max" value="1" field="selections" scope="3b7d-927b-8856-e8b7" shared="true" id="3a99-5794-2c15-8f74" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
@@ -13499,7 +13500,7 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
         </selectionEntryGroup>
         <selectionEntryGroup id="862b-4f20-d40b-d47f" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="51a7-f491-5308-2d10">
           <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ee1-58e1-51ab-a56a" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ee1-58e1-51ab-a56a" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdf-5f07-37b6-4a97" type="min"/>
           </constraints>
           <entryLinks>
@@ -25424,8 +25425,15 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81ad-86cd-6bf6-b0c0" includeChildSelections="false"/>
+              </constraints>
             </entryLink>
-            <entryLink import="true" name="Twin lascannon" hidden="false" id="7cd2-650c-8249-f5fc" type="selectionEntry" targetId="ee18-b1cd-6b60-464d"/>
+            <entryLink import="true" name="Twin lascannon" hidden="false" id="7cd2-650c-8249-f5fc" type="selectionEntry" targetId="ee18-b1cd-6b60-464d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d79-b1f9-1141-a8ce" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6be-678c-a3cd-79b0" includeChildSelections="false"/>
