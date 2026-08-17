@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7150-5917-ae80-68c5" name="Tyranids" revision="117" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@GenWilhelm" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="246" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7150-5917-ae80-68c5" name="Tyranids" revision="120" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@GenWilhelm" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="246" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7150-5917-pubN65537" name="Codex: Tyranids"/>
     <publication id="57c5-6839-bb2f-72da" name="White Dwarf 471" shortName="WD 471" publicationDate="2021-12-17" publisherUrl="https://www.games-workshop.com/white-dwarf-471-dec-2021-eng"/>
@@ -443,6 +443,11 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="1ad7-1ab8-da2b-69e9" name="Stratagem: Heroic Support" hidden="false" collective="false" import="true" targetId="cbd4-34fb-6ba6-9593" type="selectionEntry"/>
+    <entryLink import="true" name="Von Ryan&apos;s Leapers" hidden="false" id="b692-cb02-b294-69a5" type="selectionEntry" targetId="bfae-b71b-c8f4-dab5">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="689a-de7d-3711-76b2" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d957-0f84-bce5-1298" name="Biovores" hidden="false" collective="false" import="true" type="unit">
@@ -9545,6 +9550,114 @@ If that unit suffers 2 or more mortal wounds as a result of this ability this ph
         <cost name="pts" typeId="points" value="0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="-1"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Von Ryan&apos;s Leapers" hidden="false" id="bfae-b71b-c8f4-dab5">
+      <infoLinks>
+        <infoLink name="Hidden Hunter" id="7244-1ac4-65fc-ed3f" hidden="false" targetId="0968-9abb-f742-8581" type="profile"/>
+        <infoLink name="Inhuman Swiftness" id="68a9-2089-6db6-3adc" hidden="false" targetId="76f0-7b03-f8ca-2eec" type="profile"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Von Ryan&apos;s Leaper" hidden="false" id="d32c-962e-9e34-4053">
+          <costs>
+            <cost name="pts" typeId="points" value="45"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Von Ryan&apos;s Leaper" typeId="800f-21d0-4387-c943" typeName="Unit" hidden="false" id="8235-56c7-093f-dab5">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&apos;&apos;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">5</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3341-70a3-ae16-11c1" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c907-d36d-39c4-a2b3" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Leaper Claws" hidden="false" id="561b-cef9-91b9-d9e8" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09ae-d477-c6df-6679" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c2e-6844-d130-3d76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Leaper Claws" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="397c-2b19-8365-e4bc" publicationId="7150-5917-pubN65537" page="MelArm">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Melee Weapons" id="4012-371a-b6dc-6568" hidden="false" collective="false" import="true" defaultSelectionEntryId="107f-7bf1-10f3-2050">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b422-6bd7-e5f5-c173" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a901-0bba-8176-76df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Two Scything Talons" hidden="false" id="38c6-b3ec-565f-837d" collective="false" targetId="2b06-87d5-7b1e-8d82" type="selectionEntry"/>
+                <entryLink import="true" name="Two Rending Claws" hidden="false" id="c2b0-5b2a-3794-cccb" collective="false" targetId="a50e-4043-d535-0f3a" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="4"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Flesh Hooks" hidden="false" id="df1f-2e8f-1115-095d" collective="false" targetId="e8ab-6677-781d-991b" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8771-5c11-20a4-84bd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d9db-84c5-f95b-58fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <profiles>
+        <profile name="Chameleonic Skin" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="false" id="fce8-da40-f7af-a981" publicationId="7150-5917-pubN65537" page="102">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">• Each time an attack is made against this model, subtract 1 from that attack&apos;s hit roll.
+• While this model is receiving the benefits of cover, it cannot be selected as the target of a ranged attack if the attacker is more than 12&quot; away.
+• This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="increment" value="4" field="e356-c769-5920-6e14">
+          <conditions>
+            <condition type="atLeast" value="4" field="selections" scope="parent" childId="any" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="3d52-fccf-10c0-3fae" id="ece8-9995-e066-ddb8" primary="false" name="Infantry"/>
+        <categoryLink targetId="dc2c-fdd5-528b-e9ad" id="fd00-c3f7-f4d8-db57" primary="false" name="Faction: &lt;Hive Fleet&gt;"/>
+        <categoryLink targetId="3c7e-2472-ce0d-fe17" id="498d-0432-5890-40aa" primary="false" name="Faction: Hive Tendril"/>
+        <categoryLink targetId="a367-fb78-5192-96eb" id="8d4b-878c-ad79-2b4b" primary="false" name="Faction: Tyranids"/>
+        <categoryLink targetId="8553-ae3e-36e0-98a1" id="56aa-5dca-136c-bf17" primary="false" name="Flesh Hooks"/>
+        <categoryLink targetId="d5e7-e594-e6c1-f088" id="9d48-633a-7277-1f47" primary="false" name="Feeder Tendrils"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

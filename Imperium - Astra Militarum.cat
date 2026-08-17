@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Astra Militarum" revision="334" battleScribeVersion="2.03" authorName="Jon K, Joe B" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="53e9d88f-7463-8c27-fe67-e1a0d1ed0287" name="Imperium - Astra Militarum" revision="335" battleScribeVersion="2.03" authorName="Jon K, Joe B" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="99a162d9-4854-cc3b-c35e-b0c3a3cc77d6" name="Commissar Yarrick" hidden="true" collective="false" import="true" targetId="5dac-1ff6-7352-3745" type="selectionEntry">
       <modifiers>
@@ -1974,6 +1974,11 @@
     <entryLink import="true" name="Centauro Armoured Cars" hidden="false" id="3105-0a99-4313-422d" type="selectionEntry" targetId="2b7a-e3e1-d77b-379e">
       <categoryLinks>
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="9661-9cb1-95b8-3d0a" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Company Commander" hidden="false" id="2e31-171e-6ade-505e" type="selectionEntry" targetId="3e9f-920c-04ec-81e5">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="8d61-542d-ac4a-fb4f" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
