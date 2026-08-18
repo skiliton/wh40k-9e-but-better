@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7150-5917-ae80-68c5" name="Tyranids" revision="120" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@GenWilhelm" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="246" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="7150-5917-ae80-68c5" name="Tyranids" revision="121" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="@GenWilhelm" authorUrl="https://www.bsdata.net/contact" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="246" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="7150-5917-pubN65537" name="Codex: Tyranids"/>
     <publication id="57c5-6839-bb2f-72da" name="White Dwarf 471" shortName="WD 471" publicationDate="2021-12-17" publisherUrl="https://www.games-workshop.com/white-dwarf-471-dec-2021-eng"/>
@@ -9585,8 +9585,8 @@ If that unit suffers 2 or more mortal wounds as a result of this ability this ph
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Leaper Claws" hidden="false" id="561b-cef9-91b9-d9e8" collective="false">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="09ae-d477-c6df-6679" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c2e-6844-d130-3d76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="09ae-d477-c6df-6679" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4c2e-6844-d130-3d76" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <profiles>
                 <profile name="Leaper Claws" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="397c-2b19-8365-e4bc" publicationId="7150-5917-pubN65537" page="MelArm">
@@ -9594,9 +9594,9 @@ If that unit suffers 2 or more mortal wounds as a result of this ability this ph
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
                     <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
                     <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
                     <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 1 additional attack with this weapon.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9607,18 +9607,6 @@ If that unit suffers 2 or more mortal wounds as a result of this ability this ph
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Melee Weapons" id="4012-371a-b6dc-6568" hidden="false" collective="false" import="true" defaultSelectionEntryId="107f-7bf1-10f3-2050">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b422-6bd7-e5f5-c173" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a901-0bba-8176-76df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Two Scything Talons" hidden="false" id="38c6-b3ec-565f-837d" collective="false" targetId="2b06-87d5-7b1e-8d82" type="selectionEntry"/>
-                <entryLink import="true" name="Two Rending Claws" hidden="false" id="c2b0-5b2a-3794-cccb" collective="false" targetId="a50e-4043-d535-0f3a" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
