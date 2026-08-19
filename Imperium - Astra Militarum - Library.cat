@@ -13600,11 +13600,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows Prefectus Orders. In your Command phase, it can issue one Order. In addition to the normal units that can be selected for Prefectus Orders, this model can issue Prefectus Orders to friendly INFANTRY OFFICER and ABHUMAN units, but when doing so, the Regimental Tactics ability does not apply.</characteristic>
               </characteristics>
               <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="fa52-8fb7-1c87-80e6" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" value="true" field="hidden"/>
               </modifiers>
             </profile>
             <profile name="Commanding Authority" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities" hidden="true" id="c0d1-857a-463c-6346">
@@ -26358,7 +26354,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Company Commander" hidden="false" id="3e9f-920c-04ec-81e5">
+    <selectionEntry type="model" import="true" name="Company Commander" hidden="false" id="3e9f-920c-04ec-81e5">
       <costs>
         <cost name="pts" typeId="points" value="50"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -26556,11 +26552,11 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
       <categoryLinks>
         <categoryLink targetId="dd6e-7055-ca6b-b711" id="050b-c6be-aa6b-e92f" primary="false" name="Officer"/>
         <categoryLink targetId="3534-5273-62b4-3e73" id="0270-c234-6105-712a" primary="false" name="Commandant"/>
-        <categoryLink targetId="ef18-746a-369f-43a4" id="e6df-21aa-77bd-0ea4" primary="false" name="Character"/>
         <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="d832-20e3-9003-c8bf" primary="false" name="Faction: Imperium"/>
         <categoryLink targetId="3263-4233-4344-6228" id="3b71-1ce9-047d-473c" primary="false" name="Faction: Astra Militarum"/>
         <categoryLink targetId="3d52-fccf-10c0-3fae" id="83e8-f320-8cd9-9be1" primary="false" name="Infantry"/>
         <categoryLink targetId="4520-cc21-fc02-4a7e" id="c9ca-fc22-b7d5-cae4" primary="false" name="Regimental"/>
+        <categoryLink targetId="ef18-746a-369f-43a4" id="4e76-d5bc-8efc-6576" primary="false" name="Character"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
