@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="149" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="150" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -24378,6 +24378,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="02fc-c1cf-4cdb-07ed" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="12bf-5b84-a1bc-6989" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed38-bff7-6158-362a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3e9f-920c-04ec-81e5" type="equalTo" childName="Company Commander"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -26401,7 +26402,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <entryLink import="true" name="Relics" hidden="false" id="f28a-028d-94b2-bcc1" collective="false" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="9d4d-d9b6-294d-d1d9" collective="false" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
         <entryLink import="true" name="Attachés and Bodyguards" hidden="false" id="c134-dc61-7027-9a1e" collective="false" targetId="f35b-d9d5-ef7d-c817" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Character Stratagems" hidden="false" id="0128-9cba-9d47-ccdc" collective="false" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Character Stratagems" hidden="false" id="0ab2-63f7-e59a-3401" collective="false" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Melee Weapon" id="c5dc-b857-8505-9b97" hidden="false" collective="false" import="true" defaultSelectionEntryId="51a7-f491-5308-2d10">
@@ -29309,7 +29310,6 @@ Each time a model with this doctrine makes a ranged attack, an unmodified hit ro
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="33c0-8496-22d0-08e9" type="notInstanceOf"/>
-                <condition type="notInstanceOf" value="0" field="selections" scope="parent" childId="3e9f-920c-04ec-81e5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Company Commander"/>
               </conditions>
             </modifier>
             <modifier type="set" field="1a73-90b7-71b8-9b8d" value="1">
