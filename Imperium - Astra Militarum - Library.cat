@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="151" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="153" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -13671,6 +13671,10 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
             <cost name="pts" typeId="points" value="0"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22ac-d559-cb76-f872" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="90a1-2d1b-9066-3001" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -17676,6 +17680,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
+              <entryLinks>
+                <entryLink import="true" name="Astra Militarum Special Weapons" hidden="false" id="88dd-9a7d-77cd-153f" type="selectionEntryGroup" targetId="a465-d3f9-68f9-2e55"/>
+              </entryLinks>
             </selectionEntry>
             <selectionEntry id="e0f8-75f5-cb27-20f7" name="Veteran Weapon Team" page="0" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -17778,6 +17785,9 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <cost name="pts" typeId="points" value="70"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Regimental Tactics" id="d7ce-c0b7-20bd-e96e" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="526b-10c7-dbd4-8961" name="Voss-pattern Lightning" hidden="false" collective="false" import="true" type="model">
       <profiles>
@@ -21185,7 +21195,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0c1b-0eb2-acae-6255" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="556d-7939-05db-34f1" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9145-1d3b-9057-7a17" type="instanceOf"/>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="3e9f-920c-04ec-81e5" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Company Commander"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="3051-d11a-dfa0-b057" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false" childName="Company Commander"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
