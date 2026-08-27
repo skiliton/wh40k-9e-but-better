@@ -1976,14 +1976,9 @@
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="9661-9cb1-95b8-3d0a" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Company Commander" hidden="true" id="2e31-171e-6ade-505e" type="selectionEntry" targetId="3e9f-920c-04ec-81e5">
+    <entryLink import="true" name="Company Commander" hidden="false" id="2e31-171e-6ade-505e" type="selectionEntry" targetId="3e9f-920c-04ec-81e5">
       <categoryLinks>
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="8d61-542d-ac4a-fb4f" primary="true" name="HQ"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink import="true" name="Company Commander" hidden="false" id="5b9c-9808-9f8f-8f3a" type="selectionEntry" targetId="3051-d11a-dfa0-b057">
-      <categoryLinks>
-        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="489b-5be5-2840-58fe" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
     <entryLink import="true" name="Veterans" hidden="false" id="bb8f-7045-064f-2d83" type="selectionEntry" targetId="eee1-85bc-99e2-4144">
