@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="150" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="151" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -12582,10 +12582,6 @@ Align Target (Action):In your Command phase, any number of DEATHSTRIKE models fr
       </costs>
     </selectionEntry>
     <selectionEntry id="ce42-82cb-28b6-dab5" name="Hot-shot Lasgun" page="0" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="842c-f8b7-fa9c-d880" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b094-6480-9cbf-6866" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="3ef2-4db8-579b-0ce7" name="Hot-shot Lasgun" hidden="false" targetId="f520-ae1d-d755-7ab9" type="profile"/>
       </infoLinks>
@@ -17512,11 +17508,12 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="47f2-d6c4-85fa-10e8" name="Faction: &lt;REGIMENT&gt;" hidden="false" targetId="3e01-e6cf-1353-96f4" primary="false"/>
         <categoryLink id="6aa0-6f20-43b6-0fd9" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="ce45-3b95-240c-d581" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="6842-a8a5-672a-4348" name="Veterans" hidden="false" targetId="8895-4b63-cbc0-2d8b" primary="false"/>
         <categoryLink id="d212-1d19-9910-8bd6" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink targetId="4520-cc21-fc02-4a7e" id="fff5-b36c-e54a-7bf6" primary="false" name="Regimental"/>
+        <categoryLink targetId="08f1-d244-eb44-7e01" id="ada3-0d64-9266-1524" primary="false" name="Core"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a449-ecf0-b295-9b49" name="Veteran Sergeant" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -18637,7 +18634,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffe9-12b0-9ef7-98d1" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="5b61-7f9c-5eaf-009c" name="Hot-shot Laspistol" hidden="false" collective="false" import="true" targetId="be4e-87d9-3bb2-4ecd" type="selectionEntry">
+                <entryLink id="5b61-7f9c-5eaf-009c" name="Hot-shot Lasgun" hidden="false" collective="false" import="true" targetId="ce42-82cb-28b6-dab5" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="points" value="0"/>
                   </modifiers>
@@ -24378,7 +24375,6 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="02fc-c1cf-4cdb-07ed" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="12bf-5b84-a1bc-6989" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed38-bff7-6158-362a" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3e9f-920c-04ec-81e5" type="equalTo" childName="Company Commander"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -25759,7 +25755,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
                 <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
                 <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
                 <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-                <characteristic name="T" typeId="9c9f-9774-a358-3a39">4</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
                 <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                 <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
                 <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
@@ -26355,7 +26351,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Company Commander" hidden="false" id="3e9f-920c-04ec-81e5">
+    <selectionEntry type="model" import="true" name="Company Commander" hidden="true" id="3e9f-920c-04ec-81e5">
       <costs>
         <cost name="pts" typeId="points" value="50"/>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
@@ -26559,6 +26555,218 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink targetId="4520-cc21-fc02-4a7e" id="c9ca-fc22-b7d5-cae4" primary="false" name="Regimental"/>
         <categoryLink targetId="ef18-746a-369f-43a4" id="4e76-d5bc-8efc-6576" primary="false" name="Character"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry id="3051-d11a-dfa0-b057" name="Company Commander" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cff6-a8e7-27ea-0776" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Regimental</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="19cd-c205-e020-76d7">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eea9-e9df-4336-03ed" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="ebf0-6612-ba54-fcac">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="99bc-0dbb-6298-35ee" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="0897-c52d-bffb-debe">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4442-cdaa-334a-ca1e" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d3a9-69f0-0bb5-6a25">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="df8f-b6b9-45de-5b5e" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="e367-d84a-5545-facb">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7d9b-959f-e938-36f1" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="d1d2-5e35-a818-e25e">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5dea-1275-26d8-8510" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="6098-673d-8c92-0f98">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e292-e077-bce3-4402" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="f1c2-3526-b6cc-d3ae">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="be63-747f-089b-09bd" type="atLeast"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4520-cc21-fc02-4a7e" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <profiles>
+        <profile id="8d3a-ecaf-ad44-d1eb" name="Company Commander" publicationId="53e9d88f--pubN88319" page="81" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f31e-9f36-36c3-5030" name="Senior Officer (Aura)" hidden="false" targetId="f34c8090-4e32-bd27-df37-1b714a4288d2" type="profile"/>
+        <infoLink id="88a3-f88b-e561-06bc" name="Refractor Field" hidden="false" targetId="783d-d067-2d7f-d2a1" type="profile"/>
+        <infoLink id="4332-b24e-b43b-bcc6" name="Regimental Tactics" hidden="false" targetId="1b13-112a-0fec-c326" type="profile"/>
+        <infoLink id="9bd3-663c-15e8-cca9" name="Voice of Command" hidden="false" targetId="2ff26b94-8048-d15d-c541-fd4da0f49571" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c064-07e5-2f89-756f" name="Commandant" hidden="false" targetId="3534-5273-62b4-3e73" primary="false"/>
+        <categoryLink id="a1aa-42e9-5add-2d5a" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink id="7230-491b-4eb0-39f8" name="Regimental" hidden="false" targetId="4520-cc21-fc02-4a7e" primary="false"/>
+        <categoryLink id="7813-fbcb-6965-b6e0" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="407f-54d2-fffb-5f0c" name="Officer" hidden="false" targetId="dd6e-7055-ca6b-b711" primary="false"/>
+        <categoryLink id="204e-ce62-773c-5ccc" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="1341-409b-3853-c92e" primary="false" name="Faction: Imperium"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="6cf3-a6e7-186c-086f" hidden="false" collective="false" import="true" defaultSelectionEntryId="51a7-f491-5308-2d10">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a37b-3949-cb46-dd78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcc4-110b-9271-a296" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Power maul" hidden="false" id="98cf-d95a-2650-18e9" collective="false" targetId="6ea7-1195-7144-438e" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef28-4ce1-73dd-d145" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power axe" hidden="false" id="6334-25f6-7426-b3e1" collective="false" targetId="3292-34e6-f679-d5b9" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="99c1-abe4-daf4-19b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power sword" hidden="false" id="deaf-42a4-4c55-51b0" collective="false" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="214e-2520-0f3f-61d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Power fist" hidden="false" id="c888-bb49-5f76-e004" collective="false" targetId="f122-3720-fa32-4215" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1fb-ab4a-e1f6-8990" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Chainsword" hidden="false" id="fda8-b86c-e419-0956" type="selectionEntry" targetId="0dd1-2e2b-7dd1-5495">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e252-5457-fbc8-dc75" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b389-3372-ea94-5570" name="Frag grenades" hidden="false" collective="false" import="true" targetId="f68e-9984-71fe-6bca" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686b-92d6-e96a-8217" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="beb7-9cc8-c5fd-4202" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5c76-2dbd-e665-45f6" name="Commanding Authority" hidden="false" collective="false" import="true" targetId="9bc2-f515-33e5-38e8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a57-e78f-2d65-1afb" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d49-27a9-167f-a390" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="491d-455a-9068-f3ad" name="Character Stratagems" hidden="false" collective="false" import="true" targetId="2527-4b0c-1e18-38b3" type="selectionEntryGroup"/>
+        <entryLink id="b615-357e-6adc-b8ba" name="Relics" hidden="false" collective="false" import="true" targetId="8ed7-7588-0f06-9b0d" type="selectionEntryGroup"/>
+        <entryLink id="528f-deb4-cead-8c62" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="d6e2-a400-a8db-d4f2" type="selectionEntryGroup"/>
+        <entryLink id="574d-e6d4-5f65-c5f8" name="Warlord" hidden="false" collective="false" import="true" targetId="1f07-a468-bda8-fd3f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="000a-cf6d-4c86-a749" value="0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6b6b-26f3-0044-995e" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="065a-cf18-5210-4890" name="Attachés and Bodyguards" hidden="false" collective="false" import="true" targetId="f35b-d9d5-ef7d-c817" type="selectionEntryGroup"/>
+        <entryLink id="201c-95a6-39ab-0e58" name="Battle Honours" hidden="false" collective="false" import="true" targetId="1774-8223-7530-5ad5" type="selectionEntryGroup"/>
+        <entryLink id="afca-5961-2669-f1d2" name="Battle Scars" hidden="false" collective="false" import="true" targetId="cec4-9abd-dcdb-c9c2" type="selectionEntryGroup"/>
+        <entryLink id="51f2-4c69-dbfd-377d" name="Enhancements" hidden="false" collective="false" import="true" targetId="4772-f04c-cfdc-8c37" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Astra Militarum Pistol Weapons" hidden="false" id="335a-ce5e-1aab-86a6" type="selectionEntryGroup" targetId="9ef3-0f17-2aeb-436e">
+          <entryLinks>
+            <entryLink import="true" name="Laspistol" hidden="false" id="6118-3346-be4a-774c" type="selectionEntry" targetId="c10b-e1a4-c913-ae15">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="141a-176a-6ac8-b3d8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c3b-11ea-b40a-cd0a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3fef-3909-89da-adbb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="pts" typeId="points" value="50"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
