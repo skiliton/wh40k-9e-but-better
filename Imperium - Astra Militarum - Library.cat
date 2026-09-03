@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="155" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="a2d9-e3b7-13cc-6f15" name="Imperium - Astra Militarum - Library" revision="156" battleScribeVersion="2.03" authorName="Jon K, Joe B, Wil" authorContact="Discord: @Fital Shell" authorUrl="https://www.bsdata.net/contact" library="true" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="249" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>...but is it enough to stop the suck?</readme>
   <publications>
     <publication id="53e9d88f--pubN88319" name="Codex: Astra Militarum 9E"/>
@@ -17534,6 +17534,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink id="d212-1d19-9910-8bd6" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink targetId="4520-cc21-fc02-4a7e" id="fff5-b36c-e54a-7bf6" primary="false" name="Regimental"/>
         <categoryLink targetId="08f1-d244-eb44-7e01" id="ada3-0d64-9266-1524" primary="false" name="Core"/>
+        <categoryLink targetId="3957-e376-ba3a-83b9" id="0f05-53ba-40bd-496f" primary="false" name="Platoon"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a449-ecf0-b295-9b49" name="Veteran Sergeant" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -24649,6 +24650,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink id="56fa-f4aa-3014-95c3" name="Basilisk" hidden="false" targetId="7d7c-9011-2791-72d9" primary="false"/>
         <categoryLink id="0222-cf67-20a4-fbc8" name="Smoke" hidden="false" targetId="b154-f59d-8ff1-88b7" primary="false"/>
         <categoryLink id="8ff8-643c-6792-018a" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink targetId="ae37-74e2-8391-d0f8" id="4dcc-acbf-d75a-a469" primary="false" name="Artillery"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9bbc-0b36-308a-ef37" name="Earthshaker Cannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -24887,6 +24889,7 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink id="9e40-7272-232f-0176" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="58cf-9aca-69e3-f01c" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
         <categoryLink id="0614-2aa6-e3cc-ab1e" name="Smoke" hidden="false" targetId="b154-f59d-8ff1-88b7" primary="false"/>
+        <categoryLink targetId="ae37-74e2-8391-d0f8" id="aa3b-f573-b8e6-2393" primary="false" name="Artillery"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="dca9-4d97-728e-060f" name="Medusa Siege Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -25379,7 +25382,6 @@ friendly VEHICLE OFFICER and SUPER-HEAVY units.</characteristic>
         <categoryLink targetId="b154-f59d-8ff1-88b7" id="2f91-4f39-5856-730c" primary="false" name="Smoke"/>
         <categoryLink targetId="84e2-9fa9-ebe6-1d18" id="6170-d95f-3760-d21c" primary="false" name="Faction: Imperium"/>
         <categoryLink targetId="3263-4233-4344-6228" id="cd6d-7f9d-4287-b15b" primary="false" name="Faction: Astra Militarum"/>
-        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="828e-23ee-140c-6291" primary="false" name="Heavy Support"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry id="2e81-7616-b5b8-e0c3" name="Vanquisher Battle Cannon with Co-axial Heavy Stubber" page="0" hidden="false" collective="false" import="true" type="upgrade">
