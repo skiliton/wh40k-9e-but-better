@@ -9704,7 +9704,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Doctrina Imperatives" id="e5aa-3ae2-af9a-0d78" hidden="false" targetId="36ba-2b6e-86fe-943b" type="rule"/>
+        <infoLink name="Canticles of the Omnissiah" id="e5aa-3ae2-af9a-0d78" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier field="e356-c769-5920-6e14" type="increment" value="7">
@@ -9730,7 +9730,81 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="Thallax Special Weapons" id="b799-15ab-5147-e0f8" hidden="false" import="true" targetId="e6c7-19d6-35c0-8280" type="selectionEntryGroup"/>
+            <entryLink name="Lightning Gun" id="be9e-b31e-2612-9031" hidden="false" import="true" targetId="cb8e-d7c0-0524-7a76" type="selectionEntry"/>
+            <entryLink name="Cognis Multi-Laser" id="af8e-99a3-7e51-1249" hidden="false" import="true" targetId="d145-daf8-2319-a554" type="selectionEntry">
+              <constraints>
+                <constraint id="5a42-4d8f-51d2-b813" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="5a42-4d8f-51d2-b813" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="5a42-4d8f-51d2-b813" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Multi-melta" id="3f13-d2f9-86a5-f24f" hidden="false" import="true" targetId="24d9-941c-208b-0542" type="selectionEntry">
+              <constraints>
+                <constraint id="6d66-2a9a-50d4-d9be" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+              <modifiers>
+                <modifier field="6d66-2a9a-50d4-d9be" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="6d66-2a9a-50d4-d9be" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Plasma Fusil" id="a489-b42e-a099-0cda" hidden="false" import="true" targetId="c1cc-2c32-fd53-f9a4" type="selectionEntry">
+              <constraints>
+                <constraint id="1a73-569f-1f87-7e07" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier field="1a73-569f-1f87-7e07" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="1a73-569f-1f87-7e07" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Radium Cleanser" id="6e2b-4361-7601-e029" hidden="false" import="true" targetId="1687-0dbd-a8d8-9d69" type="selectionEntry">
+              <constraints>
+                <constraint id="0581-5374-5824-9fc0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="0581-5374-5824-9fc0" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="0581-5374-5824-9fc0" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="27f1-4cf1-fece-74d5" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <profiles>
             <profile name="Thallax" id="522b-88c0-e5d9-78ad" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
@@ -9747,32 +9821,18 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
               </characteristics>
             </profile>
           </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Thallax with Lightning Gun" id="a706-93ac-af17-19fa" hidden="false">
-              <constraints>
-                <constraint id="8a16-3d9f-1ce1-ef5b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
-                <constraint id="654d-a8a9-e429-7977" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="9"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Lightning Gun" id="be9e-b31e-2612-9031" hidden="false" import="true" targetId="cb8e-d7c0-0524-7a76" type="selectionEntry"/>
-              </entryLinks>
-              <selectionEntries>
-                <selectionEntry name="Chain Bayonets" id="516f-7f29-2df6-645c" hidden="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint id="04ff-bf8f-226b-28db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="9"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="3"/>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Chain Bayonets" id="76ec-1477-cbb3-c8b1" hidden="false" targetId="ff2c-9b85-be8a-4b42" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry name="Chain Bayonets" id="516f-7f29-2df6-645c" hidden="false" import="true" type="upgrade">
+              <costs>
+                <cost name="pts" typeId="points" value="3"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Chain Bayonets" id="76ec-1477-cbb3-c8b1" hidden="false" targetId="ff2c-9b85-be8a-4b42" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -9814,7 +9874,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Doctrina Imperatives" id="6ab3-0930-6db5-6baa" hidden="false" targetId="36ba-2b6e-86fe-943b" type="rule"/>
+        <infoLink name="Canticles of the Omnissiah" id="6ab3-0930-6db5-6baa" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier field="e356-c769-5920-6e14" type="increment" value="7">
@@ -9852,11 +9912,27 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
           <entryLinks>
-            <entryLink name="Ursarax Melee Wespons" id="111d-4eb0-a747-30c2" hidden="false" import="true" targetId="8b07-0544-04f2-ef40" type="selectionEntryGroup">
-              <entryLinks>
-                <entryLink name="Ursarax Twin Lightning Claws" id="a842-6427-b8ef-b4c3" hidden="false" import="true" targetId="8bda-e962-8101-22b6" type="selectionEntry"/>
-              </entryLinks>
+            <entryLink name="Ursarax Twin Power Fists" id="4c14-b37b-762c-3428" hidden="false" import="true" targetId="646a-7fdb-6a97-84f6" type="selectionEntry">
+              <constraints>
+                <constraint id="318c-71fa-58eb-ac5b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier field="318c-71fa-58eb-ac5b" type="set" value="2">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="0c30-ad86-2815-d3da" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="318c-71fa-58eb-ac5b" type="set" value="3">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="0c30-ad86-2815-d3da" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
+            <entryLink name="Ursarax Twin Lightning Claws" id="a842-6427-b8ef-b4c3" hidden="false" import="true" targetId="8bda-e962-8101-22b6" type="selectionEntry"/>
           </entryLinks>
           <infoLinks>
             <infoLink name="Volkite charger" id="1a82-9434-408f-3058" hidden="false" targetId="c943-413e-8c92-ae9b" type="profile"/>
@@ -10788,29 +10864,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Ursarax Melee Wespons" id="8b07-0544-04f2-ef40" hidden="false">
-      <entryLinks>
-        <entryLink name="Ursarax Twin Power Fists" id="4c14-b37b-762c-3428" hidden="false" import="true" targetId="646a-7fdb-6a97-84f6" type="selectionEntry">
-          <constraints>
-            <constraint id="318c-71fa-58eb-ac5b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10"/>
-          </costs>
-          <modifiers>
-            <modifier field="318c-71fa-58eb-ac5b" type="set" value="2">
-              <conditions>
-                <condition childId="any" field="selections" scope="0c30-ad86-2815-d3da" shared="true" type="atLeast" value="6"/>
-              </conditions>
-            </modifier>
-            <modifier field="318c-71fa-58eb-ac5b" type="set" value="3">
-              <conditions>
-                <condition childId="any" field="selections" scope="0c30-ad86-2815-d3da" shared="true" type="atLeast" value="9"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
+    <selectionEntryGroup name="Ursarax Melee Wespons" id="8b07-0544-04f2-ef40" hidden="false"/>
   </sharedSelectionEntryGroups>
 </catalogue>
