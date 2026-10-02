@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="205" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="206" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Imperium - Inquisition" id="2e60-828b-6bc4-9975" importRootEntries="true" targetId="e373-3c0a-1185-46ea" type="catalogue"/>
     <catalogueLink name="Imperium - Officio Assassinorum" id="668e-0ba8-d9c9-20d8" importRootEntries="true" targetId="f731-6aa6-c141-8937" type="catalogue"/>
@@ -63,6 +63,8 @@
     <categoryEntry name="Skitarii Veteran Cohort" id="ad5e-c5a6-d40a-5c5f" hidden="false"/>
     <categoryEntry name="Veterans" id="afe2-4976-d1b1-2ebc" hidden="false"/>
     <categoryEntry name="Lorica Thallax" id="e196-9249-3df7-4424" hidden="false"/>
+    <categoryEntry name="Thanatar Siege Automata" id="a862-b93d-58d3-c1db" hidden="false"/>
+    <categoryEntry name="Castellax Battle Automata" id="44d3-6209-c742-a7e3" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Belisarius Cawl" id="447c-82b5-1aa0-190d" collective="false" hidden="false" import="true" targetId="37a6-acbc-d023-b0a5" type="selectionEntry">
@@ -1327,6 +1329,13 @@ For each combined landing that you want to make, select two &lt;FORGE WORLD&gt; 
         <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time the bearer fights, it makes 1 additional attack.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Explodes (Thanatar)" id="c2ab-8c3e-c3fe-c7d5" hidden="false" typeId="88a9-3700-776b-79d1" typeName="Explosion">
+      <characteristics>
+        <characteristic name="Dice Roll" typeId="b044-79fe-269c-2d24">6</characteristic>
+        <characteristic name="Distance" typeId="fc81-6c6b-ae23-7952">6&quot;</characteristic>
+        <characteristic name="Mortal Wounds" typeId="7d5f-527b-0457-086c">D6</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Canticles of the Omnissiah" id="25f1-761d-2f64-7f0e" hidden="false" page="85" publicationId="ebe8-544e-pubN65537">
@@ -2072,14 +2081,14 @@ Aggressor Imperative: +3&quot; Move characteristic/-1 Save characteristic</descr
         <cost name="pts" typeId="points" value="0"/>
       </costs>
       <profiles>
-        <profile name="Heavy Phosphor Blaster" id="404d-3790-90d3-e57b" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+        <profile name="Heavy Phosphor Blaster" id="655e-08b1-2aea-abf8" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Dense Cover against that target.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the Benefits of Dense Cover against that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8931,7 +8940,7 @@ Use this Stratagem in your Movement phase when a SKITARII VETERAN COHORT CORE un
             <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Dense Cover against that target.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, the target does not receive the benefits of Dense Cover against that attack.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9687,7 +9696,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Thallax Cohort" id="4607-6208-c586-1011" defaultAmount="3" hidden="false" import="true" type="unit">
+    <selectionEntry name="Thallax Cohort" id="4607-6208-c586-1011" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Elites" id="1c7a-34b9-e434-7c73" hidden="false" primary="true" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2"/>
         <categoryLink name="Lorica Thallax" id="f749-aa24-465a-e1b1" hidden="false" primary="false" targetId="e196-9249-3df7-4424"/>
@@ -10098,6 +10107,666 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights, it makes 2 additional attacks with this weapon. Each time an attack is made with this weapon, you can re-roll the wound roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Thanatar Siege Automata Maniple" id="c071-6c9d-1928-4967" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" id="c52e-a480-5542-4473" hidden="false" primary="true" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
+        <categoryLink name="Faction: Imperium" id="767a-5891-1b1f-4091" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="5535-1dba-e6a6-0663" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="9c6c-e8a3-77d3-8d18" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Faction: Cult Mechanicus" id="747e-38b4-1cd9-6e61" hidden="false" primary="false" targetId="6bb8-fe7f-7918-bf8f"/>
+        <categoryLink name="Vehicle" id="bb2d-7614-dfcd-e799" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Thanatar Siege Automata" id="d39d-3f9d-30bf-aae3" hidden="false" primary="false" targetId="a862-b93d-58d3-c1db"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="2877-3d14-dad2-49ce" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="b727-8edf-0ea7-04a2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah" id="ebff-fa6f-054d-4add" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
+        <infoLink name="Explodes (Thanatar)" id="c06a-6f6a-6e42-328c" hidden="false" targetId="c2ab-8c3e-c3fe-c7d5" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Emanatus Force Field" id="4bef-7595-9b60-22cd" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Automata Maniple" id="2a33-f463-176b-0b38" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit is first set up on tha battlefield, its models do not have to be set up in unit coherency. Instead, each model must be set up within 6&quot; of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Siege Walker" id="604b-e3ee-e10e-b62f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a Normal Move, Advances or Falls Back, it can be moved across other models (excluding MONSTER and VEHICLE models) and obstacles with height 2&quot; or less as if they were not there.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Thanatar Calix Siege Automata" id="fc40-3f77-e3ac-2146" hidden="false" import="true" type="model">
+          <costs>
+            <cost name="pts" typeId="points" value="260"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Thanatar Siege Automaton (10+ wounds)" id="d7e3-59d0-ec50-ab23" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thanatar Siege Automaton (5-9 wounds)" id="047f-b661-6fa2-6e71" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thanatar Siege Automaton (1-4 wounds)" id="ea59-cd5a-24b0-8abf" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Graviton Ram" id="41df-b554-8163-fd41" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="1081-51eb-9628-59b5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="cd9a-cc9d-b200-4ba3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Graviton Ram (Melee)" id="679d-c964-f4fa-fe41" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights with this weapon, it makes 2 additional attacks, and no more than two attacks can be made with this weapon. Each time an attack with this weapon is made against a target with a 3+ Save characteristic or better, that attack has a damage characteristic of 4.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Graviton Ram (Ranged)" id="9471-fcc2-2ca0-8a79" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack with this weapon is made against a target with a 3+ Save characteristic or better, that attack has a damage characteristic of 4.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Thanatar Shock Charger" id="2316-9c9c-309f-cca1" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="97ad-bd10-43c4-ab80" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="4fcd-25d2-0820-db90" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Thanatar Shock Charger" id="745d-c4fd-2453-e7d1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, on an unmodified wound roll of 6 inflicts 2 mortal wounds on the target in addition to the normal damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Sollex Heavy Lascannon" id="a592-59e3-2fce-73db" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="29c1-341c-4458-e053" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="84e8-760f-3f71-6815" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Sollex Heavy Lascannon" id="fe3b-2900-c582-5b5e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Any VEHICLE which suffers wounds from this weapon but is not slain must subtract 1 from its Shooting hit roll until the end of its controlling player’s next turn.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Twin-linked Mauler Bolt Cannon" id="dbe9-0859-4bb7-dcd9" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="9382-92af-7105-2f34" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="612c-6f5e-309a-1335" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Twin-linked Mauler Bolt Cannon" id="758a-d048-9134-e33d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry name="Thanatar Cavas Siege Automata" id="bed3-bbbd-88e1-4470" hidden="false" import="true" type="model">
+          <costs>
+            <cost name="pts" typeId="points" value="240"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Thanatar Siege Automaton (10+ wounds)" id="d61a-866d-aa5f-d57d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thanatar Siege Automaton (5-9 wounds)" id="2a6e-242e-6f16-c75d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3+1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Thanatar Siege Automaton (1-4 wounds)" id="6331-af65-2df3-666d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">8</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8+</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Thanatar Twin Shock Charger" id="d338-fc48-812d-8d8a" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="25c7-41f6-e40a-2f6e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="a059-1a62-3343-eee3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Thanatar Twin Shock Charger" id="9373-dae1-4c3c-74ba" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with weapon profile, make 2 hit rolls instead of 1. Each time an attack is made with this weapon, on an unmodified wound roll of 6 inflicts 2 mortal wounds on the target in addition to the normal damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Twin-linked Mauler Bolt Cannon" id="d862-f821-a1d7-3cdf" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="2b1c-c8e3-6a92-43bc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="5114-1d9d-0447-62ef" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Twin-linked Mauler Bolt Cannon" id="b02d-97f3-8405-4cde" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Plasma Mortar" id="2911-5e3d-c94b-0953" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="eeb3-72e9-ee80-49a0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="ca4c-d3ff-0056-975d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <profiles>
+                <profile name="Plasma Mortar (Regular)" id="b146-d912-fba8-b957" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. This weapon can target units that are not visible to the bearer.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Plasma Mortar (Supercharged)" id="ca70-b573-3814-25b1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. This weapon can target units that are not visible to the bearer. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer&apos;s unit suffers 1 mortal wound after shooting with this weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Castellax Battle Automata Maniple" id="e719-bb0b-7196-0dd6" collective="false" hidden="false" import="true" page="82" publicationId="ebe8-544e-pubN65537" type="unit">
+      <categoryLinks>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="601a-41a5-191d-3b23" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="e67f-a6e1-7223-b6f4" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: Cult Mechanicus" id="4df7-52b6-4879-a1e1" hidden="false" primary="false" targetId="6bb8-fe7f-7918-bf8f"/>
+        <categoryLink name="Vehicle" id="cdcf-c8f4-c85a-1ed3" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Faction: Imperium" id="a874-99dc-4efa-805e" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Heavy Support" id="8678-a834-1f89-85d7" hidden="false" primary="true" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
+        <categoryLink name="Castellax Battle Automata" id="e58c-80ff-b94b-baae" hidden="false" primary="false" targetId="44d3-6209-c742-a7e3"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="0ab6-6953-abd8-1cfc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+        <constraint id="dd58-e027-0383-008a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="6"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="10"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah" id="72fb-00d7-d775-5076" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
+        <infoLink name="Explodes (Kastelan)" id="2d05-528d-ea6c-5a69" hidden="false" targetId="00d1-0722-554a-b4c9" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="e356-c769-5920-6e14" type="increment" value="10">
+          <conditions>
+            <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="e719-bb0b-7196-0dd6" shared="true" type="greaterThan" value="4"/>
+          </conditions>
+        </modifier>
+        <modifier field="e356-c769-5920-6e14" type="increment" value="10">
+          <conditions>
+            <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="e719-bb0b-7196-0dd6" shared="true" type="greaterThan" value="2"/>
+          </conditions>
+        </modifier>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="ac03-d781-0c3b-b4be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="force" shared="true" type="equalTo" value="1"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Emanatus Force Field" id="d2c2-3b2f-88db-ea80" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Automata Maniple" id="4e75-dc4e-8129-5ec7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit is first set up on tha battlefield, its models do not have to be set up in unit coherency. Instead, each model must be set up within 6&quot; of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Castellax Battle Automaton" id="a8b4-33f5-ed8e-5699" collective="false" hidden="false" import="true" type="model">
+          <costs>
+            <cost name="pts" typeId="points" value="100"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Castellax Battle Automaton" id="a383-94cc-43e9-46d6" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Weapon" id="ec51-2304-e15e-0de0" collective="false" defaultSelectionEntryId="0218-cbd3-2006-8c77" hidden="false" import="true">
+              <constraints>
+                <constraint id="bfb6-64f2-407b-c023" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="4842-cd5b-d918-3287" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Mauler Bolt Cannon" id="03dd-021b-6a92-f246" hidden="false" import="true" targetId="2e7a-8672-064f-9124" type="selectionEntry">
+                  <constraints>
+                    <constraint id="06c5-fa94-1282-d920" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Multi-melta" id="2711-4c1f-8373-a971" hidden="false" import="true" targetId="24d9-941c-208b-0542" type="selectionEntry">
+                  <constraints>
+                    <constraint id="43cd-dcbe-7438-1a34" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Darkfire Cannon" id="134c-3358-d02e-4e94" hidden="false" import="true" targetId="393c-3dc7-2471-2026" type="selectionEntry">
+                  <constraints>
+                    <constraint id="7e0a-1fdb-f885-6de1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapons" id="1c09-f0b1-64ac-d68c" hidden="false">
+              <constraints>
+                <constraint id="4cf4-e11e-b6fc-9109" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="fa8d-d615-5117-b16e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Castellax Twin Shock Charger" id="d873-1f60-5f6a-03eb" hidden="false" import="true" targetId="a906-7c29-59f1-a958" type="selectionEntry"/>
+                <entryLink name="Twin Power Blade Array" id="94f8-c28c-f965-4d8f" hidden="false" import="true" targetId="d176-83fe-5acd-7a1e" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Castellax Shock Charger and Siege Wrecker" id="1053-8aa5-6fcd-7b94" hidden="false" import="true" targetId="4237-dbc7-c578-8e0c" type="selectionEntry">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wrist Weapons" id="5160-bc58-c028-484e" hidden="false">
+              <constraints>
+                <constraint id="a2b3-05af-a57b-bf65" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8730-8879-569b-e9f3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Maxima Bolter" id="572f-e924-6245-df21" hidden="false" import="true" targetId="633f-111e-46e3-3e12" type="selectionEntry">
+                  <constraints>
+                    <constraint id="71ae-d571-9da3-5624" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Heavy bolter" id="dfe6-7156-8ec2-4c61" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
+                  <constraints>
+                    <constraint id="e05d-c6c6-7b90-823b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Heavy flamer" id="c40d-b597-33f2-d1c0" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
+                  <constraints>
+                    <constraint id="15da-74ca-70e9-b4bb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Castellax Battle Automaton" id="8b9e-54aa-6576-1250" collective="false" hidden="false" import="true" type="model">
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Castellax Battle Automaton" id="39fc-d1df-af13-2b00" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">7</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">10</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Main Weapon" id="8088-9940-7c23-6a8b" collective="false" defaultSelectionEntryId="0218-cbd3-2006-8c77" hidden="false" import="true">
+          <constraints>
+            <constraint id="ee51-0c73-3a58-2205" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="e036-fa7f-fd6b-2e9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Mauler Bolt Cannon" id="213c-65e5-919c-2556" hidden="false" import="true" targetId="2e7a-8672-064f-9124" type="selectionEntry">
+              <constraints>
+                <constraint id="c4f1-35f9-92eb-15a7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Multi-melta" id="2908-c0bb-8f25-6e23" hidden="false" import="true" targetId="24d9-941c-208b-0542" type="selectionEntry">
+              <constraints>
+                <constraint id="37d4-de6e-9c21-dd5b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Darkfire Cannon" id="e2e4-2231-afc7-46c3" hidden="false" import="true" targetId="393c-3dc7-2471-2026" type="selectionEntry">
+              <constraints>
+                <constraint id="43f1-5e52-d080-d39a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee Weapons" id="ce43-0138-ebb5-0ee1" hidden="false">
+          <constraints>
+            <constraint id="4176-590d-fcce-3a60" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="8584-6ab4-07a4-cbbb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Castellax Twin Shock Charger" id="b523-0179-a980-f703" hidden="false" import="true" targetId="a906-7c29-59f1-a958" type="selectionEntry"/>
+            <entryLink name="Twin Power Blade Array" id="5836-a198-c847-b801" hidden="false" import="true" targetId="d176-83fe-5acd-7a1e" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Castellax Shock Charger and Siege Wrecker" id="f021-a36f-3bd7-ee63" hidden="false" import="true" targetId="4237-dbc7-c578-8e0c" type="selectionEntry">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wrist Weapons" id="7fdf-2bc2-b13c-d3c2" hidden="false">
+          <constraints>
+            <constraint id="ee83-7372-5ded-184f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="b689-4947-8342-6e08" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Boltgun" id="3003-1dc5-f629-62b3" hidden="false" import="true" targetId="ca06-ac13-d02f-6f9a" type="selectionEntry">
+              <constraints>
+                <constraint id="9525-e571-a5af-7229" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Maximus Boltgun" id="7490-65ec-2eba-d4ea" hidden="false" import="true" targetId="633f-111e-46e3-3e12" type="selectionEntry">
+              <constraints>
+                <constraint id="8a19-3c13-9036-2dab" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cognis Flamer" id="88a4-b2b7-c443-f6cb" hidden="false" import="true" targetId="9041-9e93-9a3b-8d33" type="selectionEntry">
+              <constraints>
+                <constraint id="e3c9-bb0b-4bd5-444f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Mauler Bolt Cannon" id="2e7a-8672-064f-9124" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Mauler Bolt Cannon" id="19f9-cc49-2efb-6af1" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Darkfire Cannon" id="393c-3dc7-2471-2026" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Darkfire Cannon" id="e07b-9ff5-b25d-6f8d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466"/>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484"/>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7"/>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Sige Wrecker" id="8119-fd6b-99f4-f728" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="3035-9740-2a7e-82d6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Sige Wrecker" id="3a46-9c01-b515-40be" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights with this weapon, it makes 1 additional attack, and no more than one attack can be made with this weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Castellax Shock Charger" id="c1b4-fd96-c877-1120" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="3f4c-b653-1ba7-9ae3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Castellax Shock Charger" id="206a-11e9-9d49-c0c4" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, on an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to the normal damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Castellax Twin Shock Charger" id="a906-7c29-59f1-a958" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="77d5-dd93-6f4b-177a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Castellax Twin Shock Charger" id="33d6-c7ce-b93b-e646" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with weapon profile, make 2 hit rolls instead of 1. Each time an attack is made with this weapon, on an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to the normal damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Twin Power Blade Array" id="d176-83fe-5acd-7a1e" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="3794-dbc9-96e9-6856" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Twin Power Blade Array" id="57e2-64c7-3425-1d88" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+1</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with weapon profile, make 2 hit rolls instead of 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Castellax Shock Charger and Siege Wrecker" id="4237-dbc7-c578-8e0c" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="e281-5c5f-171f-b9f7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <profiles>
+        <profile name="Castellax Shock Charger" id="7424-8eb4-e807-1af5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">User</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, on an unmodified wound roll of 6 inflicts 1 mortal wound on the target in addition to the normal damage.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sige Wrecker" id="9418-b97e-87a6-5231" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">4</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights with this weapon, it makes 1 additional attack, and no more than one attack can be made with this weapon.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Maxima Bolter" id="633f-111e-46e3-3e12" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Maxima Bolter" id="9517-538a-13d3-b1fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
           </characteristics>
         </profile>
       </profiles>
