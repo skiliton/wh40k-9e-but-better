@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="206" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="207" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Imperium - Inquisition" id="2e60-828b-6bc4-9975" importRootEntries="true" targetId="e373-3c0a-1185-46ea" type="catalogue"/>
     <catalogueLink name="Imperium - Officio Assassinorum" id="668e-0ba8-d9c9-20d8" importRootEntries="true" targetId="f731-6aa6-c141-8937" type="catalogue"/>
@@ -513,6 +513,33 @@
     <entryLink name="Army of Renown - Skitarii Veteran Cohort" id="7967-3985-9e3c-e265" collective="false" hidden="false" import="true" targetId="ac03-d781-0c3b-b4be" type="selectionEntry"/>
     <entryLink name="Ursarax Cohort" id="86d6-e4c3-cbc2-af80" hidden="false" import="true" targetId="3e16-afa0-a4ca-fba2" type="selectionEntry"/>
     <entryLink name="Thallax Cohort" id="38a0-d206-c901-b307" hidden="false" import="true" targetId="4607-6208-c586-1011" type="selectionEntry"/>
+    <entryLink name="Thanatar Siege Automata Maniple" id="7760-c561-1c47-15bf" hidden="false" import="true" targetId="c071-6c9d-1928-4967" type="selectionEntry"/>
+    <entryLink name="Castellax Battle Automata Maniple" id="fe87-f1c0-9d26-6fc7" hidden="false" import="true" targetId="e719-bb0b-7196-0dd6" type="selectionEntry"/>
+    <entryLink name="Adsecularis Tech Thralls" id="49e6-5c96-e417-235f" hidden="false" import="true" targetId="5c5b-6b74-0429-94ec" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops" id="ba95-4d04-dc2a-1fea" hidden="false" primary="true" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink name="Adsecularis Tech Thralls" id="1368-ad11-c260-f34f" hidden="false" import="true" targetId="5c5b-6b74-0429-94ec" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="No Force Org Slot" id="caa7-e3b5-b4ca-9144" hidden="false" primary="true" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="adc1-0d82-01ee-bd10" field="selections" includeChildSelections="false" scope="force" shared="false" type="max" value="0"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditions>
+            <condition childId="6743-7925-6ec5-6b91" childName="Tech-Priest" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+          </conditions>
+        </modifier>
+        <modifier field="adc1-0d82-01ee-bd10" type="increment" value="1">
+          <repeats>
+            <repeat childId="6743-7925-6ec5-6b91" childName="Tech-Priest" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <infoLinks>
     <infoLink name="Extremis Sentinel Protocols" id="b9a6-a085-224e-39a1" hidden="false" targetId="098e-f085-f124-c297" type="rule"/>
@@ -9896,6 +9923,26 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink name="Photon Thruster" id="f9be-5f9e-8773-799a" hidden="false" import="true" targetId="5d09-c71b-2bfa-8882" type="selectionEntry">
+              <constraints>
+                <constraint id="3806-b6a0-6a19-f861" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <modifiers>
+                <modifier field="3806-b6a0-6a19-f861" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="4607-6208-c586-1011" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+                <modifier field="3806-b6a0-6a19-f861" type="increment" value="1">
+                  <conditions>
+                    <condition childId="any" field="selections" scope="4607-6208-c586-1011" shared="true" type="atLeast" value="9"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier field="45fe-0b98-8620-42dd" type="increment" value="1">
@@ -10011,7 +10058,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
       <selectionEntries>
         <selectionEntry name="Ursarax with Lightning Claws" id="4c41-f0e8-98c0-a3ee" hidden="false" import="true" type="model">
           <costs>
-            <cost name="pts" typeId="points" value="35"/>
+            <cost name="pts" typeId="points" value="40"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
@@ -10049,7 +10096,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <constraint id="2294-e761-37e5-2ef9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="45"/>
+            <cost name="pts" typeId="points" value="50"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
           </costs>
@@ -10059,12 +10106,12 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
           <modifiers>
             <modifier field="2294-e761-37e5-2ef9" type="increment" value="1">
               <conditions>
-                <condition childId="any" field="selections" scope="3e16-afa0-a4ca-fba2" shared="true" type="atLeast" value="4"/>
+                <condition childId="any" field="selections" scope="3e16-afa0-a4ca-fba2" shared="true" type="atLeast" value="5"/>
               </conditions>
             </modifier>
             <modifier field="2294-e761-37e5-2ef9" type="increment" value="1">
               <conditions>
-                <condition childId="any" field="selections" scope="3e16-afa0-a4ca-fba2" shared="true" type="atLeast" value="7"/>
+                <condition childId="any" field="selections" scope="3e16-afa0-a4ca-fba2" shared="true" type="atLeast" value="8"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10493,6 +10540,9 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                   <constraints>
                     <constraint id="7e0a-1fdb-f885-6de1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -10587,6 +10637,9 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
               <constraints>
                 <constraint id="43f1-5e52-d080-d39a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -10609,25 +10662,25 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Wrist Weapons" id="7fdf-2bc2-b13c-d3c2" hidden="false">
+        <selectionEntryGroup name="Wrist Weapons" id="279a-6c58-3b77-07b9" hidden="false">
           <constraints>
-            <constraint id="ee83-7372-5ded-184f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="b689-4947-8342-6e08" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+            <constraint id="a8e3-c36a-bb30-5654" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c26b-b7bc-6499-87dd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Boltgun" id="3003-1dc5-f629-62b3" hidden="false" import="true" targetId="ca06-ac13-d02f-6f9a" type="selectionEntry">
+            <entryLink name="Maxima Bolter" id="211c-3179-edbf-8107" hidden="false" import="true" targetId="633f-111e-46e3-3e12" type="selectionEntry">
               <constraints>
-                <constraint id="9525-e571-a5af-7229" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="ae15-06b9-cf91-1028" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
             </entryLink>
-            <entryLink name="Maximus Boltgun" id="7490-65ec-2eba-d4ea" hidden="false" import="true" targetId="633f-111e-46e3-3e12" type="selectionEntry">
+            <entryLink name="Heavy bolter" id="1d5d-57c1-3980-010e" hidden="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
               <constraints>
-                <constraint id="8a19-3c13-9036-2dab" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="2c23-15df-9df9-754b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cognis Flamer" id="88a4-b2b7-c443-f6cb" hidden="false" import="true" targetId="9041-9e93-9a3b-8d33" type="selectionEntry">
+            <entryLink name="Heavy flamer" id="5c70-1daa-5f51-a240" hidden="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
               <constraints>
-                <constraint id="e3c9-bb0b-4bd5-444f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="5170-a473-18a6-f947" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -10652,12 +10705,12 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
       <profiles>
         <profile name="Darkfire Cannon" id="e07b-9ff5-b25d-6f8d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464"/>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
-            <characteristic name="S" typeId="59b1-319e-ec13-d466"/>
-            <characteristic name="AP" typeId="75aa-a838-b675-6484"/>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7"/>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if that attack successfully wounds the target, invulnerable saving throws cannot be made against that attack. Each time this weapon seccessfully wounds the target, that unit substracts 1 from it&apos;s hit rolls until your next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10770,6 +10823,91 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry name="Photon Thruster" id="5d09-c71b-2bfa-8882" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Photon Thruster" id="6472-9aa5-f417-e42f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time this weapon seccessfully wounds the target, that unit substracts 1 from it&apos;s hit rolls until your next turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Adsecularis Tech Thrall" id="8a0f-b048-b415-45ae" hidden="false" import="true" type="model">
+      <costs>
+        <cost name="pts" typeId="points" value="4"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Las-lock" id="1297-646e-1e6b-b247" hidden="false" import="true" targetId="9672-7486-bedc-de33" type="selectionEntry"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Adsecularis Tech Thrall" id="d0bb-52dd-774d-d8e4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">5&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">5+</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Las-lock" id="9672-7486-bedc-de33" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Las-lock" id="864d-1eb1-b51c-d8a6" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Adsecularis Tech Thralls" id="5c5b-6b74-0429-94ec" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Faction: Imperium" id="e624-82c5-429f-1e0d" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="e8f6-a352-1763-6113" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="b76d-0903-8353-73c0" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Infantry" id="f3e9-acde-d704-861e" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
+        <categoryLink name="Servitors" id="3e47-2aad-714e-ca6f" hidden="false" primary="false" targetId="087d-6c35-17a2-b79c"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Adsecularis Tech Thrall" id="de13-9524-c37f-12eb" hidden="false" import="true" targetId="8a0f-b048-b415-45ae" type="selectionEntry">
+          <constraints>
+            <constraint id="6f30-3059-2ce7-3b00" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="10"/>
+            <constraint id="6f86-b648-0db1-4666" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Mindlock" id="2669-2315-df94-5bcf" hidden="false" targetId="acad-f31b-7808-11c2" type="profile"/>
+      </infoLinks>
+      <modifiers>
+        <modifier field="e356-c769-5920-6e14" type="set" value="6">
+          <conditions>
+            <condition childId="any" field="selections" scope="5c5b-6b74-0429-94ec" shared="true" type="atLeast" value="11"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
