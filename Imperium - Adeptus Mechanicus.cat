@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="207" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="208" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Imperium - Inquisition" id="2e60-828b-6bc4-9975" importRootEntries="true" targetId="e373-3c0a-1185-46ea" type="catalogue"/>
     <catalogueLink name="Imperium - Officio Assassinorum" id="668e-0ba8-d9c9-20d8" importRootEntries="true" targetId="f731-6aa6-c141-8937" type="catalogue"/>
@@ -65,6 +65,9 @@
     <categoryEntry name="Lorica Thallax" id="e196-9249-3df7-4424" hidden="false"/>
     <categoryEntry name="Thanatar Siege Automata" id="a862-b93d-58d3-c1db" hidden="false"/>
     <categoryEntry name="Castellax Battle Automata" id="44d3-6209-c742-a7e3" hidden="false"/>
+    <categoryEntry name="Krios Tanks" id="daa8-0239-8c22-5082" hidden="false"/>
+    <categoryEntry name="Karacnos Assault Tank" id="2ec5-7a70-a9cd-9e33" hidden="false"/>
+    <categoryEntry name="Triaros Armoured Conveyor" id="d6c0-cd26-dd0d-4990" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink name="Belisarius Cawl" id="447c-82b5-1aa0-190d" collective="false" hidden="false" import="true" targetId="37a6-acbc-d023-b0a5" type="selectionEntry">
@@ -540,6 +543,9 @@
         </modifier>
       </modifiers>
     </entryLink>
+    <entryLink name="Krios Tank Squadron" id="51e7-c1cb-4c2b-de03" hidden="false" import="true" targetId="02a1-9ff7-6580-55fa" type="selectionEntry"/>
+    <entryLink name="Triaros Armoured Conveyor" id="9965-c852-b72e-dff8" hidden="false" import="true" targetId="117d-cde8-45cf-364f" type="selectionEntry"/>
+    <entryLink name="Karacnos Assault Tank" id="4977-4d9a-7baa-155a" hidden="false" import="true" targetId="3ca6-bc01-7fd8-7b60" type="selectionEntry"/>
   </entryLinks>
   <infoLinks>
     <infoLink name="Extremis Sentinel Protocols" id="b9a6-a085-224e-39a1" hidden="false" targetId="098e-f085-f124-c297" type="rule"/>
@@ -1357,6 +1363,13 @@ For each combined landing that you want to make, select two &lt;FORGE WORLD&gt; 
       </characteristics>
     </profile>
     <profile name="Explodes (Thanatar)" id="c2ab-8c3e-c3fe-c7d5" hidden="false" typeId="88a9-3700-776b-79d1" typeName="Explosion">
+      <characteristics>
+        <characteristic name="Dice Roll" typeId="b044-79fe-269c-2d24">6</characteristic>
+        <characteristic name="Distance" typeId="fc81-6c6b-ae23-7952">6&quot;</characteristic>
+        <characteristic name="Mortal Wounds" typeId="7d5f-527b-0457-086c">D6</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Explodes (Karacnos)" id="e5f9-f3d9-1036-4348" hidden="false" typeId="88a9-3700-776b-79d1" typeName="Explosion">
       <characteristics>
         <characteristic name="Dice Roll" typeId="b044-79fe-269c-2d24">6</characteristic>
         <characteristic name="Distance" typeId="fc81-6c6b-ae23-7952">6&quot;</characteristic>
@@ -9718,7 +9731,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
             <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
-            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer&apos;s unit suffers 1 mortal wound after shooting with this weapon.</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer&apos;s unit suffers 1 mortal wound after shooting with this weapon.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10921,6 +10934,501 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Volkite Caliver" id="fe86-fbfc-90ba-4927" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Volkite Caliver" id="c00b-2dbb-18d3-6208" hidden="false" page="58" publicationId="7573-8d1b-acdf-2de8" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of a 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Krios Tank Squadron" id="02a1-9ff7-6580-55fa" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" id="649a-9312-1f24-309c" hidden="false" primary="true" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
+        <categoryLink name="Faction: Imperium" id="e780-ea31-7014-d196" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="c098-db40-0c44-aa95" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="b25b-86df-f7f5-1693" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Faction: Cult Mechanicus" id="4eb7-2c25-cea8-d75c" hidden="false" primary="false" targetId="6bb8-fe7f-7918-bf8f"/>
+        <categoryLink name="Vehicle" id="e24d-d8e4-72f8-9593" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Krios Tanks" id="309b-96cf-c8ea-780b" hidden="false" primary="false" targetId="daa8-0239-8c22-5082"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Explodes (Dunecrawler)" id="2e53-1121-dc66-f3b9" hidden="false" targetId="be14-6add-1a95-1bdc" type="profile"/>
+        <infoLink name="Canticles of the Omnissiah" id="6ac4-3414-b209-5377" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Emanatus Force Field" id="1d97-4f4d-9609-c69e" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Galvanic Traction Drive" id="182e-fd76-d7a8-d282" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Models in this unit can ignore any or all modifiers to their movement.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Krios Tanks" id="cd9c-41d2-e9ff-5b6c" hidden="false" import="true" type="model">
+          <constraints>
+            <constraint id="b214-0a4d-fd8b-c49c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="ae1b-7dbf-2cce-ade6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="130"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Hunter-killer missile" id="caa4-7eae-ff94-2483" hidden="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+              <constraints>
+                <constraint id="0cdf-9f38-2d5f-3ee8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Krios Tank (6+ wounds)" id="3588-c220-9058-67a7" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">14&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">11</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Krios Tank (3-5 wounds)" id="6f89-fcea-c99a-8b12" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">11&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Krios Tank (1-2 wounds)" id="1184-1a09-0899-f89d" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">6</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">7</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry name="Two Hull-mounted Volkite Calivers" id="896b-27de-b908-3152" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="17dc-0a3b-c23f-7999" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+                <constraint id="f43a-c983-df6d-e40e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <profiles>
+                <profile name="Volkite Caliver" id="d030-1bcb-3920-0130" hidden="false" page="58" publicationId="7573-8d1b-acdf-2de8" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, an unmodified wound roll of a 6 inflicts 1 mortal wound on the target in addition to any normal damage.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Main Cannon" id="9408-97e3-c032-2923" hidden="false">
+              <constraints>
+                <constraint id="c88e-07d0-cda5-7e1b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="a398-65eb-4423-e9b9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Lightning Cannon" id="30e4-abc6-6cc4-95fd" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="2c4a-9bea-48a9-d6c3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="4e64-b835-e6ac-f4cd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Lightning Cannon" id="cd76-a85c-889c-0002" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack using this weapon is made targeting a VEHICLE unit, reroll the wound roll.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Pulsar Fusil" id="fe57-cec3-5dd2-3821" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="6176-4eaa-70b0-4690" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="bd6c-96d8-9ea0-e821" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Pulsar Fusil" id="97e1-70ef-145d-fc33" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6+2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Irradiation Blaster" id="ac26-82be-c769-9e7f" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="6fb8-4669-126c-271e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="cfdd-b368-0aed-a0a7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Irradiation Blaster (Focused)" id="3222-b49e-65ad-8c93" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Beam. Each time an attack is made with this weapon against an enemy unit (excluding VEHICLE units), a hit roll of 6 automatically wounds the target.</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Irradiation Blaster (Dissipated)" id="a7ea-2007-a33b-f63a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6+3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. Each time an attack is made with this weapon against an enemy unit (excluding VEHICLE units), a hit roll of 6 automatically wounds the target.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Wargear" id="b4a2-2572-c038-c371" collective="false" hidden="false" import="true">
+              <constraints>
+                <constraint id="9a1a-fa78-8c5d-f495" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="3bbe-ff1d-6351-02a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Broad Spectrum Data-Tether" id="859c-66c6-a3d8-33c5" collective="false" hidden="false" import="true" targetId="57ab-1c67-732f-ccb9" type="selectionEntry"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry name="Smoke Launchers" id="6354-fbaa-fe4d-5e51" collective="false" hidden="false" import="true" type="upgrade">
+                  <categoryLinks>
+                    <categoryLink name="Smokescreen" id="5f45-83c8-e8ff-ae30" hidden="false" primary="false" targetId="5eae-b811-fd13-2154"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint id="7929-f97f-f8d6-89f4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Shock Ram" id="fe38-1c5a-ddd0-0e4e" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Shock Ram" id="5e17-079a-d743-f641" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">+3</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Use this weapon only if this unit made a charge move this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Triaros Armoured Conveyor" id="117d-cde8-45cf-364f" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Dedicated Transport" id="cff5-aa96-fe55-fd05" hidden="false" primary="true" targetId="1b66-3f5f-6705-079a"/>
+        <categoryLink name="Faction: Imperium" id="5eac-3473-3f78-3302" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="fb08-6741-0e23-a750" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="8cfb-10a4-bd75-ce8b" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Faction: Cult Mechanicus" id="573b-4b66-7ade-7e0b" hidden="false" primary="false" targetId="6bb8-fe7f-7918-bf8f"/>
+        <categoryLink name="Vehicle" id="4f30-a4c6-bde3-3613" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Transport" id="4829-97c4-fad7-50ae" hidden="false" primary="false" targetId="6cc4-1b62-8e8a-05cd"/>
+        <categoryLink name="Triaros Armoured Conveyor" id="403d-3318-69a6-3c02" hidden="false" primary="false" targetId="d6c0-cd26-dd0d-4990"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="155"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="7"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Shock Ram" id="5f86-5110-c78d-1024" hidden="false" import="true" targetId="fe38-1c5a-ddd0-0e4e" type="selectionEntry">
+          <constraints>
+            <constraint id="7b4c-36d2-46a4-31e0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="518b-60b0-9204-8134" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Hunter-killer missile" id="9591-b9f0-a506-5424" hidden="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+          <constraints>
+            <constraint id="dcd6-45e7-f933-9076" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Explodes (Skorpius)" id="6148-8736-e6f9-2872" hidden="false" targetId="03d5-2314-e4e4-9a46" type="profile"/>
+        <infoLink name="Canticles of the Omnissiah" id="35b4-7ea5-037a-8381" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Triaros Armoured Conveyor" id="3b13-c83f-c5db-4d01" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
+          <characteristics>
+            <characteristic name="Capacity" typeId="15aa-1916-a38b-d223">22</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Transport" id="a450-e1be-493c-d75f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a transport capacity of 22 &lt;FORGE WORLD&gt; INFANTRY models. Each LORICA THALLAX model takes up space of 3 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Triaros Armoured Conveyor (8+ wounds)" id="70e4-79b6-f079-c53b" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">15</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Triaros Armoured Conveyor (5-7 wounds)" id="076a-72b4-1f79-f9e3" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">9&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Triaros Armoured Conveyor (1-4 wounds)" id="d8c5-7bb3-39db-588a" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flare Shield" id="fd5e-5661-2967-afb3" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Reduce the Armour Penetration characteristic of ranged attacks made against this model by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Two hull-mounted Volkite Calivers" id="6a98-8571-8b27-4016" hidden="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink name="Volkite Caliver" id="5a38-1186-5688-25d9" hidden="false" import="true" targetId="fe86-fbfc-90ba-4927" type="selectionEntry">
+              <constraints>
+                <constraint id="c8c3-8506-492e-3657" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+                <constraint id="da9e-8633-067d-e6b8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry name="Pintle Mounted Twin-linked Mauler Bolt Cannon" id="92e2-2691-5db2-4113" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="e472-1670-e37e-8286" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Twin-linked Mauler Bolt Cannon" id="d9ad-2ee5-6075-0136" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Lightning Lock" id="d12f-9d8f-0035-9490" hidden="false" import="true" type="upgrade">
+      <profiles>
+        <profile name="Lightning Lock" id="e61a-bbac-c133-4c4f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
+            <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+            <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Karacnos Assault Tank" id="3ca6-bc01-7fd8-7b60" hidden="false" import="true" type="model">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" id="574d-54a8-2bf4-24a3" hidden="false" primary="true" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6"/>
+        <categoryLink name="Faction: Imperium" id="3146-6aba-565a-3104" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
+        <categoryLink name="Faction: Adeptus Mechanicus" id="b0d9-32e7-ca2d-6ebd" hidden="false" primary="false" targetId="ca27-5069-1c2c-a28b"/>
+        <categoryLink name="Faction: &lt;Forge World&gt;" id="5417-340a-8158-1510" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
+        <categoryLink name="Faction: Cult Mechanicus" id="a0d9-f771-cf33-6b2e" hidden="false" primary="false" targetId="6bb8-fe7f-7918-bf8f"/>
+        <categoryLink name="Vehicle" id="936e-4c65-6884-4fe0" hidden="false" primary="false" targetId="c8fd-783f-3230-493e"/>
+        <categoryLink name="Karacnos Assault Tank" id="a32f-2e47-26f0-6e18" hidden="false" primary="false" targetId="2ec5-7a70-a9cd-9e33"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="240"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="12"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Shock Ram" id="5bca-250b-3045-e5be" hidden="false" import="true" targetId="fe38-1c5a-ddd0-0e4e" type="selectionEntry">
+          <constraints>
+            <constraint id="f328-eb87-947f-4df7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="82e9-828b-e0c8-e2ee" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Hunter-killer missile" id="fb68-ac47-21e1-f4d4" hidden="false" import="true" targetId="32bf-b117-4ecf-5165" type="selectionEntry">
+          <constraints>
+            <constraint id="f0ad-b5cb-af14-f1fd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah" id="a546-4d13-149d-1626" hidden="false" targetId="25f1-761d-2f64-7f0e" type="rule"/>
+        <infoLink name="Explodes (Karacnos)" id="7872-1e81-1269-e03a" hidden="false" targetId="e5f9-f3d9-1036-4348" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Karacnos Assault Tank (10+ wounds)" id="2a02-e8e9-55aa-8f14" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">10&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">5+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">18</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">6</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Karacnos Assault Tank (5-9 wounds)" id="9824-2046-5786-6172" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">7&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Karacnos Assault Tank (1-4 wounds)" id="aefd-bf6e-d6ef-2311" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">4&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">6+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">5+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">7</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">8</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">N/A</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">D3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flare Shield" id="7a9c-8095-d873-6ddf" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Reduce the Armour Penetration characteristic of ranged attacks made against this model by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Two Sponson-mounted Lightning Locks" id="9577-3e46-99e9-24d9" hidden="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink name="Lightning Lock" id="95d6-a01b-0c8a-7642" hidden="false" import="true" targetId="d12f-9d8f-0035-9490" type="selectionEntry">
+              <constraints>
+                <constraint id="c031-e416-3c24-d46e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+                <constraint id="d891-d8cd-f031-f07b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry name="Karacnos Mortar Battery" id="7352-8573-e532-a59e" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="23a7-ca7f-bed3-a175" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c8b5-8995-748f-12e2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <profiles>
+            <profile name="Karacnos Mortar Battery" id="8af2-9cb2-bd1e-3897" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. This weapon can target units that are not visible to the bearer. Each time an unmodified hit roll of 1 is made for an attack with this weapon profile, the bearer&apos;s unit suffers 1 mortal wound after shooting with this weapon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
