@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 9th Edition, but better" id="28ec-711c-d87f-3aeb" authorContact="@WH40k Data Dev" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" revision="258" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 9th Edition, but better" id="28ec-711c-d87f-3aeb" authorContact="@WH40k Data Dev" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" revision="259" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>This is the game system file for Warhammer 40,000, supporting the 9th edition of the game.  It is required for all other catalogues to function.</readme>
   <categoryEntries>
     <categoryEntry name="No Force Org Slot" id="ff36a6f3-19bf-4f48-8956-adacfd28fe74" hidden="false"/>
@@ -6458,7 +6458,7 @@ Remaining Wounds | Aura Range
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Heavy bolter" id="e79c-2813-4ba1-fe9e" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
+        <infoLink name="Boltgun" id="e79c-2813-4ba1-fe9e" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Lasgun" id="fd87-854b-d284-184a" collective="false" hidden="false" import="true" type="upgrade">

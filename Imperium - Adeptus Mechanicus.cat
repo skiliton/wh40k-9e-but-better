@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="208" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="209" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Imperium - Inquisition" id="2e60-828b-6bc4-9975" importRootEntries="true" targetId="e373-3c0a-1185-46ea" type="catalogue"/>
     <catalogueLink name="Imperium - Officio Assassinorum" id="668e-0ba8-d9c9-20d8" importRootEntries="true" targetId="f731-6aa6-c141-8937" type="catalogue"/>
@@ -10011,7 +10011,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Ursarax Cohort" id="3e16-afa0-a4ca-fba2" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Ursarax Cohort" id="3e16-afa0-a4ca-fba2" hidden="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink name="Fast Attack" id="f2fe-ab61-169f-5e0b" hidden="false" primary="true" targetId="c274d0b0-5866-44bc-9810-91c136ae7438"/>
         <categoryLink name="Faction: Imperium" id="3495-6729-489f-d8da" hidden="false" primary="false" targetId="84e2-9fa9-ebe6-1d18"/>
@@ -10054,19 +10054,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">During deployment, you can set up this model in reserves, ready to deploy via jump pack, instead of placing it on the battlefield. At the end of any of your movement phases the model can make an aerial drop - set it up anywhere on the battlefield that is more than 9&quot; away from any enemy models.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Ursarax" id="9022-ebfd-bb5d-1843" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
-          <characteristics>
-            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">8&quot;</characteristic>
-            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
-            <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
-            <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-            <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
-            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">4</characteristic>
-            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
-            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ursarax" id="2c8d-7695-6826-cf97" hidden="false">
@@ -10075,7 +10062,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <constraint id="1dd1-8748-c8b3-daa3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="9"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Ursarax with Power Fists" id="8111-7c56-333e-4317" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Ursarax with Power Fists" id="8111-7c56-333e-4317" hidden="false" import="true" type="model">
               <constraints>
                 <constraint id="2294-e761-37e5-2ef9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -10392,7 +10379,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">+4</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time the bearer fights with this weapon, it makes 2 additional attacks, and no more than two attacks can be made with this weapon. Each time an attack with this weapon is made against a target with a 3+ Save characteristic or better, that attack has a damage characteristic of 4.</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack with this weapon is made against a target with a 3+ Save characteristic or better, that attack has a damage characteristic of 4.</characteristic>
                       </characteristics>
                     </profile>
                     <profile name="Graviton Ram (Ranged)" id="9471-fcc2-2ca0-8a79" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -10434,7 +10421,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                     <profile name="Sollex Heavy Lascannon" id="fe3b-2900-c582-5b5e" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
                         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">12</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-4</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D3+3</characteristic>
@@ -10734,7 +10721,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
             <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack is made with this weapon, if that attack successfully wounds the target, invulnerable saving throws cannot be made against that attack. Each time this weapon seccessfully wounds the target, that unit substracts 1 from it&apos;s hit rolls until your next turn.</characteristic>
           </characteristics>
         </profile>
@@ -10854,7 +10841,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <profile name="Photon Thruster" id="6472-9aa5-f417-e42f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault D3+3</characteristic>
             <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
             <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
             <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
@@ -10870,7 +10857,12 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Las-lock" id="1297-646e-1e6b-b247" hidden="false" import="true" targetId="9672-7486-bedc-de33" type="selectionEntry"/>
+        <entryLink name="Las-lock" id="1297-646e-1e6b-b247" hidden="false" import="true" targetId="9672-7486-bedc-de33" type="selectionEntry">
+          <constraints>
+            <constraint id="7bce-b10d-939a-be52" field="selections" includeChildSelections="false" scope="force" shared="true" type="min" value="1"/>
+            <constraint id="2a4e-cbb5-d8a0-c5be" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <profiles>
         <profile name="Adsecularis Tech Thrall" id="d0bb-52dd-774d-d8e4" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
@@ -11067,7 +11059,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                 <selectionEntry name="Lightning Cannon" id="30e4-abc6-6cc4-95fd" hidden="false" import="true" type="upgrade">
                   <constraints>
                     <constraint id="2c4a-9bea-48a9-d6c3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="4e64-b835-e6ac-f4cd" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <profiles>
                     <profile name="Lightning Cannon" id="cd76-a85c-889c-0002" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -11084,7 +11075,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                 </selectionEntry>
                 <selectionEntry name="Pulsar Fusil" id="fe57-cec3-5dd2-3821" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="6176-4eaa-70b0-4690" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="bd6c-96d8-9ea0-e821" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
@@ -11107,7 +11097,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                 </selectionEntry>
                 <selectionEntry name="Irradiation Blaster" id="ac26-82be-c769-9e7f" hidden="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint id="6fb8-4669-126c-271e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="cfdd-b368-0aed-a0a7" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <profiles>
@@ -11271,6 +11260,10 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
       </profiles>
       <selectionEntries>
         <selectionEntry name="Two hull-mounted Volkite Calivers" id="6a98-8571-8b27-4016" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="30fc-36ec-a8b0-a0f5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="8bcf-b9bb-fc2e-99b1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
           <entryLinks>
             <entryLink name="Volkite Caliver" id="5a38-1186-5688-25d9" hidden="false" import="true" targetId="fe86-fbfc-90ba-4927" type="selectionEntry">
               <constraints>
@@ -11401,6 +11394,10 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
       </profiles>
       <selectionEntries>
         <selectionEntry name="Two Sponson-mounted Lightning Locks" id="9577-3e46-99e9-24d9" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="1006-a75a-33d4-3fd3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="0778-1e9f-5bd7-346d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
           <entryLinks>
             <entryLink name="Lightning Lock" id="95d6-a01b-0c8a-7642" hidden="false" import="true" targetId="d12f-9d8f-0035-9490" type="selectionEntry">
               <constraints>
