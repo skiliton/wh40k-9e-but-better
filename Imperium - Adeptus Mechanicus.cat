@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="213" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Imperium - Adeptus Mechanicus" id="ebe8-544e-1fe8-fcde" authorContact="@Thairne" authorName="BSData Developers" authorUrl="https://www.bsdata.net/contact" battleScribeVersion="2.03" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="248" library="false" revision="216" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
     <catalogueLink name="Imperium - Inquisition" id="2e60-828b-6bc4-9975" importRootEntries="true" targetId="e373-3c0a-1185-46ea" type="catalogue"/>
     <catalogueLink name="Imperium - Officio Assassinorum" id="668e-0ba8-d9c9-20d8" importRootEntries="true" targetId="f731-6aa6-c141-8937" type="catalogue"/>
@@ -9771,8 +9771,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
       <profiles>
         <profile name="Lorica Thallax" id="c967-c405-67b7-401a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.
-</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
           </characteristics>
         </profile>
         <profile name="Incunabulan Jet Pack" id="2685-2b04-bd0b-7a1a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -9919,7 +9918,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
@@ -9944,7 +9943,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
@@ -9976,7 +9975,7 @@ Each time an attack is made with this weapon against an enemy unit (excluding VE
                     <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
                     <characteristic name="S" typeId="2218-aa3c-265f-2939">5</characteristic>
                     <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
-                    <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">3</characteristic>
                     <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
                     <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
                     <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
@@ -10059,8 +10058,7 @@ Add 3 to the Advance rolls made for this unit.</characteristic>
         </profile>
         <profile name="Lorica Thallax" id="6f1a-ee7b-b1d0-724e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.
-</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit would lose a wound, roll one D6: on a 5+, that wound is not lost.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10190,11 +10188,6 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <infoLink name="Explodes (Thanatar)" id="c06a-6f6a-6e42-328c" hidden="false" targetId="c2ab-8c3e-c3fe-c7d5" type="profile"/>
       </infoLinks>
       <profiles>
-        <profile name="Emanatus Force Field" id="4bef-7595-9b60-22cd" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Automata Maniple" id="2a33-f463-176b-0b38" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit is first set up on tha battlefield, its models do not have to be set up in unit coherency. Instead, each model must be set up within 6&quot; of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.</characteristic>
@@ -10203,6 +10196,16 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <profile name="Heavy Siege Walker" id="604b-e3ee-e10e-b62f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time this model makes a Normal Move, Advances or Falls Back, it can be moved across other models (excluding MONSTER and VEHICLE models) and obstacles with height 2&quot; or less as if they were not there.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Djinn-Sight" id="77d6-c7df-efd8-73a4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model from this unit makes a ranged attack, the target does not receive the benefits of Dense Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ionic Deflectors" id="9331-db58-597b-a0bd" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Models in this unit have 5+ Invulnerable Save against ranged attacks.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10393,12 +10396,12 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
                     </profile>
                     <profile name="Graviton Ram (Ranged)" id="9471-fcc2-2ca0-8a79" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
                       <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3</characteristic>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2D3</characteristic>
                         <characteristic name="S" typeId="59b1-319e-ec13-d466">8</characteristic>
                         <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
                         <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Each time an attack with this weapon is made against a target with a 3+ Save characteristic or better, that attack has a damage characteristic of 4.</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10500,14 +10503,14 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Emanatus Force Field" id="d2c2-3b2f-88db-ea80" hidden="false" publicationId="ebe8-544e-pubN65537" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-          <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model has a 5+ invulnerable save.</characteristic>
-          </characteristics>
-        </profile>
         <profile name="Automata Maniple" id="4e75-dc4e-8129-5ec7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
             <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit is first set up on tha battlefield, its models do not have to be set up in unit coherency. Instead, each model must be set up within 6&quot; of one other model from its unit. From that point on, each model in this unit is treated as a separate unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Atomantic Deflectors" id="cf0a-40e6-2731-3db5" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Models in this unit have 5+ Invulnerable Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10910,6 +10913,7 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
         <categoryLink name="Faction: &lt;Forge World&gt;" id="b76d-0903-8353-73c0" hidden="false" primary="false" targetId="dfde-d915-6e58-09af"/>
         <categoryLink name="Infantry" id="f3e9-acde-d704-861e" hidden="false" primary="false" targetId="3d52-fccf-10c0-3fae"/>
         <categoryLink name="Servitors" id="3e47-2aad-714e-ca6f" hidden="false" primary="false" targetId="087d-6c35-17a2-b79c"/>
+        <categoryLink name="Core" id="8990-78b1-5bef-0172" hidden="false" primary="false" targetId="08f1-d244-eb44-7e01"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -11485,9 +11489,9 @@ Each time an attack is made with this weapon, subtract 1 from that attack’s hi
             <profile name="Havoc Launcher" id="e4a8-003a-e40d-28aa" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D6</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">5</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
                 <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast.</characteristic>
               </characteristics>
